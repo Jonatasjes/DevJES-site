@@ -2,6 +2,7 @@
 
 
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
 
 body {
@@ -55,18 +56,21 @@ nav ul li a:hover {
     font-weight: lighter;
     color: #00B0DC;
 }
+div.principal {
+    position: relative;
+    top: 210px;
+}
 
 #areaPrincipal {
     width: 370px;
     height: 327px;
     margin: auto;
-    top: 215px;
-    background-color: aqua;
+   
     position: relative;
 }
 .fotoArea img {
     position: relative;
-    left: 50%;
+    left: 105px;
     height: 160px;
     width: 160px;
     border-radius: 50%;
@@ -74,15 +78,17 @@ nav ul li a:hover {
 }
 h3, h1 {
     color: #fff;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+h1 {
+    font-size: 20px !important;
+}
+h3 {
+    margin: 15px 0;
+    font-weight: 600 !important;
+    font-size: 40px !important;
+
 }
 
 
-.midiasSociais ul li a {
-    display: inline-block;
-    width: 34px;
-    height: 34px;
-    line-height: 34px;
-    font-size: 14px;
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    color: #fff;
-}
