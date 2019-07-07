@@ -14,6 +14,9 @@
   <body>
 
     <header>
+      <div id="particles-js">
+        <canvas class="particles-js-canvas-el" width="1903" height="969" style="width: 100%; height: 100%;"></canvas>
+      </div>
       <div id="cabecalho">
         <div class="container">
           <img id="logo" src="img/logo.png">
@@ -42,38 +45,38 @@
         </div>
       </div>
       
-      </div>
+      
 
-    <div class="principal container">
+      <div class="principal container">
 
-      <div id="areaPrincipal">
-        <div class="fotoArea">
-          <img src="img/foto.jpg" alt="foto">
+        <div id="areaPrincipal">
+          <div class="fotoArea">
+            <img src="img/foto.jpg" alt="foto">
+          </div>
+          <hgroup>
+            <h3>Jônatas Eleotério</h3>
+            <h1>Desenvolvedor Web</h1>
+          </hgroup>
+
+          <div class="midiasSociais">
+            <ul>
+              <li>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-mobile-alt"></i></a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <hgroup>
-          <h3>Jônatas Eleotério</h3>
-          <h1>Desenvolvedor Web</h1>
-        </hgroup>
-
-        <div class="midiasSociais">
-          <ul>
-            <li>
-              <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fab fa-whatsapp"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fas fa-mobile-alt"></i></a>
-            </li>
-          </ul>
-        </div>
       </div>
-    </div>
-
+      
     </header>
     <main>
 
@@ -137,9 +140,12 @@
     <footer>
 
     </footer>
-
-
-    <script src="javascript/jquery-3.4.1.min.js"></script>
+    
+    <script src="particles.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/lib/stats.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
