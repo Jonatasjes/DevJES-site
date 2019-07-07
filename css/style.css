@@ -15,7 +15,7 @@ header {
     height: 790px;
     background-image: url(../img/back1.jpg);
     background-repeat: no-repeat;
-    background-position: inherit;
+    background-position: center;
     background-size: cover;
 }
 #cabecalho {
@@ -29,12 +29,12 @@ header {
     position: relative;   
 }
 #logo {
-    margin: 25px 10%;
+    margin: 25px 0 25px 50px;
     height: 30px;
 }
 nav {
     float: right;
-    margin: 28px 10%;    
+    margin: 28px 28px 28px 0;    
 }
 nav ul {
     margin: 0 10px 0 0;
@@ -76,19 +76,125 @@ div.principal {
     border-radius: 50%;
     border: 5px solid #fff;  
 }
-h3, h1 {
+#areaPrincipal h3, h1 {
     color: #fff;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
 }
-h1 {
+#areaPrincipal hgroup {
+    position: relative;
+    top: 15px;
+}
+#areaPrincipal h1 {
+    font-weight: 100 !important;
     font-size: 20px !important;
 }
-h3 {
+#areaPrincipal h3 {
     margin: 15px 0;
     font-weight: 600 !important;
     font-size: 40px !important;
 
 }
+.midiasSociais {
+    position: relative;
+    top: 20px;
+}
+.midiasSociais ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.midiasSociais ul li {
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid  rgba(247, 247, 247, .3);
+}
+.midiasSociais ul li a {
+    color: #fff;  
+}
 
+/* fim cabeçalho */
 
+/* Corpo */
+
+#apresentacao {
+    height: 610px;
+    width: 100%;
+    background-color: #fff;
+}
+#apresentacao .container {
+    padding: 85px 0 0 0;
+}
+#apresentacao .foto {
+    width: 310px;
+    height: 440px;
+    background-image: url(../img/eu1.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 10px solid #fff;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, .3);
+}
+
+#apresentacao h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 15px;    
+}
+h2 {
+    color: #333;
+    font-weight: 600;
+    font-family: 'Montserrat' , 'sans-serif';    
+}
+#apresentacao p , b {
+    font-family: 'Roboto' , 'sans-serif';
+    font-size: 15px;
+    color: #333;
+    font-weight: 400;
+}
+
+.infPessoais {
+    list-style-type: none;
+    padding: 0;
+    margin-right: 10px; 
+    margin-bottom: 25px;
+}
+.infPessoais .titulo {
+    color: #a1a1a1;
+    font-weight: 700;
+    font-size: 15px;
+    font-family: 'Roboto' , 'sans-serif'; 
+    border-bottom: 2px solid #a1a1a1;
+    margin-right: 5px;
+}
+.infPessoais .valor {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #333333;
+    font-weight: 400;
+}
+#skill-btn {
+    background: #00b0dc;
+    border: 1px solid #00b0dc;
+    color: #fff;
+}
+#down-btn {
+    background: none;
+    color: #2B2F37;
+    border: 1px solid #00b0dc;
+}
+#skill-btn, #down-btn {
+cursor: pointer;
+display: inline-block;
+font-family: 'Roboto', sans-serif;
+font-size: 14px;
+font-weight: 300;
+letter-spacing: 1px;
+line-height: 18px;
+padding: 14px 22px;
+margin-right: 15px;
+text-align: center;
+}
