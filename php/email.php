@@ -2,9 +2,9 @@
 
 if(isset($_POST['email']) && !empty($_POST['email'])) {
 
-$nome = addcslashes($_POST['nome']);
-$email = addcslashes($_POST['email']);
-$mensagem = addcslashes($_POST['mensagem']);
+$nome = addslashes($_POST['nome']);
+$email = addslashes($_POST['email']);
+$mensagem = addslashes($_POST['mensagem']);
 
 }
 
