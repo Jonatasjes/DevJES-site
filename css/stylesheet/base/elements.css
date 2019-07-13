@@ -9,6 +9,9 @@ a.btn-b {
 	font-weight: 300;
 	text-align: center;
 }
+#cabeca .section-cabeca {
+	background-color: rgba(0, 0, 0, 0.4)
+}
 
 .menu a {
 	z-index: 5;

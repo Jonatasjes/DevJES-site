@@ -9,13 +9,21 @@
 	background-position: center;
 }
 #cabeca {
-	height: 80px;
+	position: fixed;
+	width: 100%;
+	height: 60px;
+	z-index: 5;
+}
+#cabeca .section-cabeca {
+	width: 100%;
+	height: 60px;
 	padding: 25px 0;
 	display: flex;
 	justify-content: space-around;
 	z-index: 5;
 }
 .logo {
+
 	height: 30px;
 }
 #cabeca .menu {
