@@ -11,10 +11,13 @@ a.btn-b {
 }
 
 .menu a {
+	z-index: 5;
+	padding: 10px;
 	font-size: 15px;
 	color: #fff;
 }
 .menu a:hover {
+	z-index: 5;
 	font-size: 15px;
 	text-decoration: none;
 	color: #00B0DC;

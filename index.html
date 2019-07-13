@@ -25,7 +25,7 @@
 
 			<div id="cabeca">
 
-				<img src="img/logo.png" class="logo"/>
+				<a href="https://devjes.com.br"><img src="img/logo.png" class="logo"/></a>
 				
                 <nav class="menu">
                     <ul>
@@ -62,16 +62,16 @@
 				<div class="midiais-sociais">
 					<ul>
 						<li>
-							<a href="#"><i class="fab fa-linkedin-in"></i></a>
+							<a href="https://www.linkedin.com/in/jeseleoterios" target="_blank"><i class="fab fa-linkedin-in"></i></a>
 						</li>
 						<li>
-							<a href="#"><i class="fab fa-twitter"></i></a>
+							<a href="https://twitter.com/JonatasEleoterS" target="_blank"><i class="fab fa-twitter"></i></a>
 						</li>
 						<li>
-							<a href="#"><i class="fab fa-whatsapp"></i></a>
+							<a href="https://api.whatsapp.com/send?phone=5521997184684&text=Desenvolvedor%20DevJES%20" target="_blank"><i class="fab fa-whatsapp"></i></a>
 						</li>
 						<li>
-							<a href="#"><i class="fas fa-mobile-alt"></i></a>
+							<a href="tel:+55021997184684"><i class="fas fa-mobile-alt" target="_blank"></i></a>
 						</li>
 					</ul>
 				</div> <!--  /capa-midiais-sociais  -->
@@ -388,18 +388,17 @@
 
 			<div class="section-contato">
 				<div class="formulario">
-					<form>
+					<form method="POST" id="contato" action="php/email.php"> 
 						<div class="form-name form-group">
-						    <input type="text" class="form-control" id="nome" placeholder="Seu nome*">
-						
-						    <input type="email" class="form-control" id="email" placeholder="Seu email*">
+						    <input type="text"  name="nome" class="form-control" id="nome" placeholder="Seu nome*">
+						    <input type="email" name="email" class="form-control" id="email" placeholder="Seu email*">
 						</div>
 						<div class="form-group">
-							<textarea class="form-control" id="menssagem" rows="10" placeholder="Sua menssagem*"></textarea>
+							<textarea name="mensagem" class="form-control" id="mensagem" rows="10" placeholder="Sua mensagem*"></textarea>
 						</div>
 
 						<div class="botoes">
-							<a id="formulario-btn" class="btn-b btn btn-primary " href="#" role="button">Envie</a>
+							<button id="formulario-btn" type="submit" class="btn-b btn btn-primary">Envie</button>
 	                	</div>
 					</form>
 
@@ -417,15 +416,22 @@
 					<div class="section-info">
 						<i class="fas fa-phone-alt"></i>
 						<div class="info">
-							<h2>CONTATO</h2>
-							<P>+55 021 9 9718 4684</P>
+							<h2>TELEFONE</h2>
+							<P><a href="tel:+55021997184684">+55 021 9 9718 4684</a></P>
+						</div>
+					</div>
+					<div class="section-info">
+						<i class="far fa-envelope-open"></i>
+						<div class="info">
+							<h2>EMAIL</h2>
+							<P><a href="mailto:contato@devjes.com.br">contato@devjes.com.br</a></P>
 						</div>
 					</div>
 					<div class="section-info">
 						<i class="fas fa-globe-americas"></i>
 						<div class="info">
 							<h2>WEBSITE</h2>
-							<P><a href="#">www.devjes.com.br<a></P>
+							<P><a href="https://devjes.com.br">www.devjes.com.br<a></P>
 						</div>
 					</div>
 				</div> <!--  /informacoes  -->
@@ -436,8 +442,8 @@
 
 	<footer>
 		<div id="rodape" class="caixa">
-			<p><a href="#">DevJES 2019</a> - Todos os direitos reservados.</p>
-			<img src="img/logo.png" class="logo">
+			<p><a href="https://devjes.com.br">DevJES 2019</a> - Todos os direitos reservados.</p>
+			<a href="https://devjes.com.br"><img src="img/logo.png" class="logo"/></a>
 		</div>
     </footer>
     
