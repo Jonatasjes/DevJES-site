@@ -1,0 +1,8 @@
+#rodape {
+    height: 80px;
+    justify-content: space-around;
+    background-color: #333;
+}
+#rodape p {
+    margin: 0;
+}

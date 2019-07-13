@@ -1,151 +1,452 @@
-<!doctype html>
-<html lang="pt-br">
-  <head>
-    <title>DevJES</title>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Dev.JES</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/stylesheet/base/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="css/stylesheet/base/fonts.css"/>
+    <link rel="stylesheet" type="text/css" href="css/stylesheet/base/elements.css"/>
+    <link rel="stylesheet" type="text/css" href="css/stylesheet/layout/header.css"/>
+    <link rel="stylesheet" type="text/css" href="css/stylesheet/layout/main.css"/>
+    <link rel="stylesheet" type="text/css" href="css/stylesheet/layout/footer.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<script src="https://kit.fontawesome.com/8495600fe7.js"></script>
+</head>
+<body>
+	<header>
 
-    <link rel="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet" href="css/bootstrap.min.css"/>
-    
-    <script src="https://kit.fontawesome.com/8495600fe7.js"></script>
-  </head>
-  <body>
+		<div id="particles-js">
 
-    <header>
-      <div id="particles-js">
-        <canvas class="particles-js-canvas-el" width="1903" height="969" style="width: 100%; height: 100%;"></canvas>
-      </div>
-      <div id="cabecalho">
-        <div class="container">
-          <img id="logo" src="img/logo.png">
-          <nav>           
-            <ul>
-              <li>
-                <a href="#">Home</a>
-              </li>
-              <li>
-                <a href="#">Sobre</a>
-              </li>
-              <li>
-                <a href="#">Serviços</a>
-              </li>
-              <li>
-                <a href="#">Formação</a>
-              </li>
-              <li>
-                <a href="#">Experiência</a>
-              </li>
-              <li>
-                <a href="#">Contato</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-      
-      
+		</div>
 
-      <div class="principal container">
+		<div id="header">
 
-        <div id="areaPrincipal">
-          <div class="fotoArea">
-            <img src="img/foto.jpg" alt="foto">
-          </div>
-          <hgroup>
-            <h3>Jônatas Eleotério</h3>
-            <h1>Desenvolvedor Web</h1>
-          </hgroup>
+			<div id="cabeca">
 
-          <div class="midiasSociais">
-            <ul>
-              <li>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fab fa-whatsapp"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fas fa-mobile-alt"></i></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      
-    </header>
-    <main>
+				<img src="img/logo.png" class="logo"/>
+				
+                <nav class="menu">
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="/#sobre">Sobre</a>
+                        </li>
+                        <li>
+                            <a href="/#servicos">Serviços</a>
+                        </li>
+                        <li>
+                            <a href="/#formacao">Formação</a>
+                        </li>
+                        <li>
+                            <a href="/#experiencia">Experiência</a>
+                        </li>
+                        <li>
+                            <a href="/#contato">Contato</a>
+                        </li>
+                    </ul> <!--  /menu  -->
+                </nav>
+                
+			</div> <!--  /cabeca  -->
 
-      <div id="apresentacao">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <div class="foto container"></div>
-            </div>
-            <div class="col">
-              <h2>DESENVOLVEDOR FRONT-END</h2>
-              <p>Sou <b>Jônatas Eleotério Silva</b>, observador, dinâmico, criativo, reconhecido pelo profissionalismo e por sempre procurar adquirir novos conhecimentos para agregar a equipe.</p>
-              <p>Como projetista tenho bastante experiência em projetos grandes e complexos, hoje pretendo utilizar essa minha experiência para atuar como desenvolvedor. Já trabalho em alguns projetos próprios elaborando os designers com CorelDRAW, utilizando HTML, CSS, Bootstrap, Javascript, jQuery.</p>
-              <div class="row">
-                <div class="col-sm-6">
-                  <ul class="infPessoais">
-                    <li>
-                      <span class="titulo">Nome:</span>
-                      <span class="valor">Jônatas Eleotério Silva</span>
-                    </li>
-                    <li>
-                      <span class="titulo">Idade:</span>
-                      <span class="valor">27 anos</span>
-                    </li>
-                    <li>
-                      <span class="titulo">Email:</span>
-                      <span class="valor">contato@devjes.com.br</span>
-                    </li>
-                  </ul>
-                </div>
-                <div class="col-sm-6">
-                  <ul class="infPessoais">
-                    <li>
-                      <span class="titulo">Cel:</span>
-                      <span class="valor">021 99718 4684</span>
-                    </li>
-                    <li>
-                      <span class="titulo">End.:</span>
-                      <span class="valor">São João de Meriti - RJ</span>
-                    </li>
-                    <li>
-                      <span class="titulo"></span>
-                      <span></span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+			<div id="capa">
+				
+                <img src="img/foto-perfil.JPG" alt="Jônatas Eleotério Silva" class="foto">
+                
+                <h1>Jônatas Eleotério</h1>
+                <h2>Desenvolvedor Web</h2>
+                
+				<div class="midiais-sociais">
+					<ul>
+						<li>
+							<a href="#"><i class="fab fa-linkedin-in"></i></a>
+						</li>
+						<li>
+							<a href="#"><i class="fab fa-twitter"></i></a>
+						</li>
+						<li>
+							<a href="#"><i class="fab fa-whatsapp"></i></a>
+						</li>
+						<li>
+							<a href="#"><i class="fas fa-mobile-alt"></i></a>
+						</li>
+					</ul>
+				</div> <!--  /capa-midiais-sociais  -->
+			</div> <!--  /capa  -->
+			<div class="frase">
+				<h2>Nada é fácil, se estiver fácil questione.</h2>
+			</div>
+		</div> <!--  /header  -->
+	</header>
 
-              <a id="skill-btn" class="btn btn-primary " href="#" role="button">SKILLS</a>
-              <a id="down-btn" class="btn btn-primary " href="#" role="button">DOWNLOAD CV</a>
+	<main>
+		
+		<div id="sobre" class="caixa">
+
+			
+			<div class="moldura">
+				<img src="img/foto-sobre.jpg" alt="Jônatas Eleotério Silva" class="foto">
+			</div>
+
+			<div class="apresentacao">
+
+                <section>
+                    <h3>DESENVOLVEDOR FRONT-END</h3>
+                    <p>Sou <b>Jônatas Eleotério Silva</b>, observador, dinâmico, criativo, reconhecido pelo profissionalismo e por sempre procurar adquirir novos conhecimentos para agregar a equipe.</p>
+              		<p>Como projetista tenho bastante experiência em projetos grandes e complexos, hoje pretendo utilizar essa minha experiência para atuar como desenvolvedor. Já trabalho em alguns projetos próprios elaborando os designers com CorelDRAW, utilizando HTML, CSS, Bootstrap, Javascript, jQuery.</p>
+                </section>
+
+				<div class="informacoes-contato">
+
+					<ul class="lista-esquerda">
+						<li>
+							<span class="titulo">Nome:</span><span class="valor">Jônatas Eleotério Silva</span>
+						</li>
+						<li>
+							<span class="titulo">Idade:</span><span class="valor">27 anos</span>
+						</li>
+						<li>
+							<span class="titulo">Email:</span><span class="valor">contato@devjes.com.br</span>
+						</li>
+					</ul>
+					<ul class="lista-direita">
+						<li>
+							<span class="titulo">Cel:</span><span class="valor">+55 021 9 9718 4684</span>
+						</li>
+						<li>
+							<span class="titulo">End.:</span><span class="valor">São João de Meriti - RJ</span>
+						</li>
+						<li>
+							<span class="titulo"></span><span class="valor"></span>
+						</li>
+					</ul>
+				</div><!--  /informacoes-contato  -->
+				
+				<div class="botoes">
+					<a id="skill-btn" class="btn-b btn btn-primary " href="#skills" role="button">SKILLS</a>
+              		<a id="down-btn" target="_blank" class="btn-b btn btn-primary " href="cv/cv.pdf" role="button" download="curriculo">DOWNLOAD CV</a>
+                </div>  
+			</div> <!--  /apresentacao  -->
+		</div> <!--  /sobre  -->
+
+		<div id="servicos" class="caixa">
+
+			<div class="section-titulo">
+				<h3>MEUS <span>SERVIÇOS</span></h3>
+			</div>
+
+			<div class="section-valor">
+
+				<div class="servico">
+					<i class="fas fa-project-diagram"></i>
+					<h4>Projetista</h4>
+					<span>Desenhos em AutoCAD 2D</span>
+					<p>Unifilar, interligação, planta baixa, cortes, fachadas, rotas de infraestrutura, típicos de instalaçãoo.</p>
+				</div>
+				<div class="servico">
+					<i class="far fa-window-maximize"></i>
+					<h4>Projetista</h4>
+					<span>Desenhos em AutoCAD 2D</span>
+					<p>Unifilar, interligação, planta baixa, cortes, fachadas, rotas de infraestrutura, típicos de instalaçãoo.</p>
+				</div>
+			</div> <!--  /section-valor  -->
+		</div> <!--  /serviços serviçoes  -->
+
+		<div id="skills" class="caixa">
+
+			<div class="section-titulo">
+				<h3>MINHAS <span>SKILLS</span></h3>
+			</div>
+
+			<div class="section-skills">
+
+				<div class="section-skillsbar">
+
+					<div class="skillsbar">
+						<div class="skillsbar-val">
+							<h6 class="skillsbar-titulo">HTML5</h6>
+							<h6 class="skillsbar-percent">80%</h6>
+						</div>
+
+						<div class="skillsbar-bar">
+							<div id="filho1" class="skillsbar-child"></div>
+						</div>
+					</div>
+
+					<div class="skillsbar">
+						<div class="skillsbar-val">
+							<h6 class="skillsbar-titulo">CSS3</h6>
+							<h6 class="skillsbar-percent">80%</h6>
+						</div>
+						<div class="skillsbar-bar">
+							<div id="filho2" class="skillsbar-child"></div>
+						</div>
+					</div>
+
+					<div class="skillsbar">
+						<div class="skillsbar-val">
+							<h6 class="skillsbar-titulo">Javascript</h6>
+							<h6 class="skillsbar-percent">50%</h6>
+						</div>
+						<div class="skillsbar-bar">
+							<div id="filho3" class="skillsbar-child"></div>
+						</div>
+					</div>
+
+					<div class="skillsbar">
+						<div class="skillsbar-val">
+							<h6 class="skillsbar-titulo">jQuery</h6>
+							<h6 class="skillsbar-percent">50%</h6>
+						</div>
+						<div class="skillsbar-bar">
+							<div id="filho4" class="skillsbar-child"></div>
+						</div>
+					</div>
+
+				</div> <!--  /section-skillsbar  -->
+
+					<div class="section-skillsbar">
+
+					<div class="skillsbar">
+						<div class="skillsbar-val">
+							<h6 class="skillsbar-titulo">Bootstrap</h6>
+							<h6 class="skillsbar-percent">50%</h6>
+						</div>
+						<div class="skillsbar-bar">
+							<div id="filho5" class="skillsbar-child"></div>
+						</div>
+					</div>
+
+					<div class="skillsbar">
+						<div class="skillsbar-val">
+							<h6 class="skillsbar-titulo">Ajax</h6>
+							<h6 class="skillsbar-percent">20%</h6>
+						</div>
+						<div class="skillsbar-bar">
+							<div id="filho6"class="skillsbar-child"></div>
+						</div>
+					</div>
+
+					<div class="skillsbar">
+						<div class="skillsbar-val">
+							<h6 class="skillsbar-titulo">CorewDRAW</h6>
+							<h6 class="skillsbar-percent">50%</h6>
+						</div>
+						<div class="skillsbar-bar">
+							<div id="filho7" class="skillsbar-child"></div>
+						</div>
+					</div>
+
+					<div class="skillsbar">
+						<div class="skillsbar-val">
+							<h6 class="skillsbar-titulo">AutoCAD</h6>
+							<h6 class="skillsbar-percent">90%</h6>
+						</div>
+						<div class="skillsbar-bar">
+							<div id="filho8" class="skillsbar-child"></div>
+						</div>
+					</div>
+
+				</div> <!--  /section-skillsbar  -->
+
+			</div> <!--  /section-skills  -->
+			
+		</div> <!--  /skills  -->
+
+		<div id="formacao" class="caixa">
+
+			<div class="section-titulo">
+				<h3>FORMAÇÃO <span>ACADÊMICA</span></h3>
+			</div>
+
+			<div class="section-formacao">
+
+				<div class="principal">
+					<div class="section-valor">
+						<i class="far fa-bookmark"></i>
+						<div class="titulo">
+							<h5>Sistema de Informação (Bacharelado)</h5>
+							<span>Univercidade Veiga de Almeida - Cursando</span>
+						</div>
+					</div>
+				</div> <!--  /principal  -->
+
+				<div class="secundaria">
+
+					<div class="section-valor">
+						<i class="fas fa-paperclip"></i>
+						<div class="titulo">
+							<h5>Curso Completo do Desenvolvedor Web</h5>
+							<span>HCODE - Udemy - (Desembro de 2018) - Completo</span>
+						</div>
+					</div>
+					<div class="section-valor">
+						<i class="fas fa-paperclip"></i>
+						<div class="titulo">
+							<h5>Aprenda Javascript, jQuery, Ajax Json do Zero na Prática</h5>
+							<span>Professor Ivan Lourenço Gomes - Udemy - Completo</span>
+						</div>
+					</div>
+					<div class="section-valor">
+						<i class="fas fa-paperclip"></i>
+						<div class="titulo">
+							<h5>CSS: Um passo adiante</h5>
+							<span>Tárcio Zemel - Udemy - Completo</span>
+						</div>
+					</div>
+					<div class="section-valor">
+						<i class="fas fa-paperclip"></i>
+						<div class="titulo">
+							<h5>Flexbox - O guia completo</h5>
+							<span>Tárcio Zemel - Udemy - Completo</span>
+						</div>
+					</div>
+					<div class="section-valor">
+						<i class="fas fa-paperclip"></i>
+						<div class="titulo">
+							<h5>CSS Grid: O sistema definitivo de layouts </h5>
+							<span>Tárcio Zemel - Udemy - Completo</span>
+						</div>
+					</div>
+					<div class="section-valor">
+						<i class="fas fa-paperclip"></i>
+						<div class="titulo">
+							<h5>Sass placeholders: O jeito certo</h5>
+							<span>Tárcio Zemel - Udemy - Cursando</span>
+						</div>
+					</div>
+					<div class="section-valor">
+						<i class="fas fa-paperclip"></i>
+						<div class="titulo">
+							<h5>Python 3 COMPLETO</h5>
+							<span>Pierian Data Inc. - Udemy - Cursando</span>
+						</div>
+					</div>
+				</div> <!--  /secundaria  -->
+			</div> <!--  /section-formacao  -->
+		</div> <!--  /formacao  -->
+
+		<div id="experiencia" class="caixa">
+
+			<div class="section-titulo">
+				<h3>EXPERIÊNCIA <span>PROFISSIONAL</span></h3>
+			</div>
 
 
-            </div>
-          </div>
-        </div>
-      </div>
+			<div class="linha">
+
+				<div class="section-valor">
+
+					<div class="titulo">
+						<h5>Desenhista Projetista</h5>
+						<span>Prosegur Tecnologia</span>
+						<h6>2014 - Atualmente</h6>
+					</div>
+
+					<p>Desenvolvimento de grandes projetos de sistemas de segurança, atuando para empresas como Petrobras, Vale, Honda, entre outras.</p>
+
+				</div>
+				
+			</div> <!--  /linha  -->
+
+			<div class="linha">
+
+				<div class="section-valor">
+					<div class="titulo">
+
+						<h5>Desenhista Cadista</h5>
+						<span>Flowers Consulting</span>
+						<h6>2014 - 2014</h6>
+					</div>
+
+					<p>Responsável pale criação e ou atualização de projetos de sites de telecomunicações para fim de regulamentação junto à prefeitura.</p>
+
+				</div> <!--  /section-valor  -->
+				<div class="section-valor">
+
+					<div class="titulo">
+						<h5>Músico Profissional</h5>
+						<span>Autônomo</span>
+						<h6>2007 - 2013</h6>
+					</div>
+
+					<p>O ramo da música me ensinou a ter muita criatividade, raciocínio lógico e intuição pois essas coisas são exigidas a todo momento.</p>
+
+				</div> <!--  /section-valor  -->
+			</div> <!--  /linha  -->
+		</div> <!--  /experiencia  -->
+
+		<div id="contato" class="caixa">
+
+			<div class="section-titulo">
+				<h3>MEUS <span>CONTATOS</span></h3>
+			</div>
 
 
+			<div class="section-contato">
+				<div class="formulario">
+					<form>
+						<div class="form-name form-group">
+						    <input type="text" class="form-control" id="nome" placeholder="Seu nome*">
+						
+						    <input type="email" class="form-control" id="email" placeholder="Seu email*">
+						</div>
+						<div class="form-group">
+							<textarea class="form-control" id="menssagem" rows="10" placeholder="Sua menssagem*"></textarea>
+						</div>
 
-    </main>
-    <footer>
+						<div class="botoes">
+							<a id="formulario-btn" class="btn-b btn btn-primary " href="#" role="button">Envie</a>
+	                	</div>
+					</form>
 
+				</div> <!--  /formulario  -->
+
+				<div class="informacoes">
+
+					<div class="section-info">
+						<i class="fas fa-map-marker-alt"></i>
+						<div class="info">
+							<h2>ENDEREÇO</h2>
+							<P>Rua araci, São João de Meriti</P>
+						</div>
+					</div>
+					<div class="section-info">
+						<i class="fas fa-phone-alt"></i>
+						<div class="info">
+							<h2>CONTATO</h2>
+							<P>+55 021 9 9718 4684</P>
+						</div>
+					</div>
+					<div class="section-info">
+						<i class="fas fa-globe-americas"></i>
+						<div class="info">
+							<h2>WEBSITE</h2>
+							<P><a href="#">www.devjes.com.br<a></P>
+						</div>
+					</div>
+				</div> <!--  /informacoes  -->
+			</div><!--  /section-contato  -->
+		</div> <!--  /contato  -->
+
+	</main>
+
+	<footer>
+		<div id="rodape" class="caixa">
+			<p><a href="#">DevJES 2019</a> - Todos os direitos reservados.</p>
+			<img src="img/logo.png" class="logo">
+		</div>
     </footer>
     
-    <script src="particles.js"></script>
-    <script src="js/app.js"></script>
-    <script src="js/lib/stats.js"></script>
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="js/particle/particles.js"></script>
+	<script src="js/particle/app.js"></script>
+
+</body>
 </html>

@@ -1,0 +1,171 @@
+.caixa {
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+
+#sobre {
+    flex-wrap: wrap;
+}
+#sobre .moldura {
+    width: 350px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#sobre .foto {
+    width: 250px;
+    border: 10px solid #fff;
+    box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.2);
+}
+#sobre .apresentacao {
+    width: 50%;
+    min-width: 517px;
+    margin: 0 20px;
+    padding: 20px;
+
+}
+#sobre .informacoes-contato {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#sobre .informacoes-contato .titulo {
+    margin-right: 10px;
+}
+#sobre .informacoes-contato .valor {
+    margin-right: 30px;
+}
+#sobre .btn-b {
+    margin-right: 10px;
+}
+#servicos {
+    flex-direction: column;
+    background-color: #f8f8f8;
+}
+#servicos .section-valor {
+    width: 80%;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#servicos .servico {
+    width: 360px;
+    height: 280px;
+    margin: 10px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: thin solid #777;
+}
+#servicos .servico i {
+    margin-bottom: 15px;
+}
+#servicos .servico p {
+    text-align: center;
+}
+#skills {
+    flex-direction: column;
+    background-image: url("../../../img/back2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#skills .section-skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#skills .skillsbar {
+    margin: 10px 0;
+}
+
+#skills .section-skillsbar {
+    margin: 0 15px;
+}
+#skills .skillsbar-val {
+    display: flex;
+    justify-content: space-between;
+}
+#formacao {
+    flex-direction: column;
+    background-color: #fff;
+}
+#formacao .section-formacao {
+    margin: 15px;
+    padding: 25px;
+    box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.2);
+}
+#formacao .principal {
+    margin: 15px 0;
+}
+#formacao .section-valor {
+    display: flex;
+    align-items: center;
+}
+#formacao .titulo {
+    margin-left: 10px;
+}
+#experiencia {
+    flex-direction: column;
+    background-color: #f8f8f8;
+}
+#experiencia .linha {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#experiencia .section-valor {
+    width: 420px;
+    height: 240px;
+    padding: 25px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.2);
+}
+#experiencia .titulo {
+    margin: 10px 0;
+}
+#contato {
+    flex-direction: column;
+}
+#contato .section-contato {
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#contato .formulario {
+    width: 550px;
+    margin: 20px;
+}
+#contato .formulario .form-name {
+    display: flex;
+}
+#contato .formulario #nome{
+    margin-right: 10px;
+}
+#contato .informacoes {
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#contato .section-info {
+    display: flex;
+    align-items: center;
+}
+#contato .section-info i {
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
