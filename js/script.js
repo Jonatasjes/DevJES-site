@@ -10,8 +10,14 @@ var secundaria = $(".secundaria");
 var formacao = $(".formacao-secundaria");
 var count = 0;
 
-
-
+function scrollTo (buttonCliked, targetOffsetId, speed ) {
+	$(document).on('click', buttonCliked, function(evt){
+		evt.preventDefault();
+		var target_offset = $(targetOffsetId).offset();
+		var target_top = target_offset.top;
+		$('html, body').animate({ scrollTop: target_top }, speed);
+	})
+}
 
 function menuRolavel() {
   if (document.body.scrollTop > pontoSobreY || document.documentElement.scrollTop > pontoSobreY) {
@@ -88,18 +94,28 @@ $("#menu-b-bars").click(function(){
 
 })
 
+
+
 window.onscroll = function() {menuRolavel()};
 
-escalaOnMouse(midiasSociais);
-escalaOutMouse(midiasSociais);
+$(document).ready(function(){
 
-escalaOnMouse(servico);
-escalaOutMouse(servico);
-
-escalaOnMouse(logo);
-escalaOutMouse(logo);
-
-
-
-
+	escalaOnMouse(midiasSociais);
+	escalaOutMouse(midiasSociais);
+	
+	escalaOnMouse(servico);
+	escalaOutMouse(servico);
+	
+	escalaOnMouse(logo);
+	escalaOutMouse(logo);
+	
+	scrollTo('#menu-home', '#header', 500)
+	scrollTo('#menu-sobre', '#sobre', 500)
+	scrollTo('#menu-servicos', '#servicos', 500)
+	scrollTo('#menu-formacao', '#formacao', 500)
+	scrollTo('#menu-experiencia', '#experiencia', 500)
+	scrollTo('#menu-contato', '#contato', 500)
+	scrollTo('#skill-btn', '#skills', 500)
+	
+})
 
