@@ -3,6 +3,13 @@
     justify-content: space-around;
     background-color: #333;
 }
+#rodape .rodape-conteudo {
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+#rodape a:nth-child(3) {
+    display: none;
+}
 #rodape p {
     margin: 0;
 }

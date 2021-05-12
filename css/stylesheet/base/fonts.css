@@ -5,7 +5,7 @@ a, p, span {
 	font-family: 'Roboto', 'sans-serif';
 }
 p, span {
-	font-size: 15px;
+	font-size: 1rem;
 	color: #333;
 }
 
@@ -13,19 +13,113 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: 'Montserrat', 'sans-serif';
 	color: #333;
 }
-
+.menu a {
+	font-size: .95rem;
+	color: #fff;
+}
+.menu a:hover {
+	font-size: .96rem;
+	text-decoration: none;
+	color: #00B0DC;
+}
 .section-titulo span {
 	font-family: 'Montserrat', 'sans-serif';
 }
 #header .frase h2 {
-	font-size: 20px;
+	font-size: 2rem;
 	font-weight: 100;
 	color: #fff;
+}
+a.btn-b {
+	font-size: .9rem;
+	font-weight: 300;
+}
+.section-titulo h3 {
+	font-size: 2.5rem;
+	font-weight: 400;
+	color: #262626;
+}
+
+.section-titulo span {
+	font-size: 2.5rem;
+	font-weight: 400;
+	color: #00B0DC;
+}
+#capa h1 {
+	font-size: 2.5rem;
+	font-weight: 600;
+	color: #fff;
+}
+#capa h2 {
+	font-size: 1.50rem;
+	font-weight: 100;
+	color: #fff;
+}
+#capa a {
+	color: #fff;
+}
+
+#servicos h4 {
+	font-size: 1.50rem;
+	font-weight: 600;
+}
+#servicos i {
+	font-size: 2.5rem;
+    color: #00B0DC;
+}
+#skills h6  {
+	font-weight: 600;
+	color: #fff;
+}
+#skills h6.skillsbar-titulo  {
+	font-size: 1.25rem;
+}
+#skills h6.skillsbar-percent  {
+	font-size: .8rem;
+}
+#formacao i {
+	font-size: 1.25rem;
+	color: #00B0DC;
 }
 #skills h3 {
 	color: #fff;
 }
-
+.titulo h5 {
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+.titulo span {
+	font-size: .9rem;
+	font-weight: 600;
+	color: #00B0DC;
+}
+.titulo h6 {
+	font-size: 1.2rem;
+	font-weight: 600;
+	margin: 0;
+}
+#formacao .valor-conteudo span {
+    font-size: .7rem;
+}
+#contato .info h2 {
+	font-size: .8rem;
+	font-weight: 600;
+}
+#contato .info p, #contato .info p a {
+	font-size: .7rem;
+	font-weight: 400;
+	color: #777;
+}
+#rodape p {
+	font-size: 1rem;
+	font-weight: 400;
+	color: #fff;
+}
+#rodape a {
+	font-size: 1rem;
+	font-weight: 400;
+	color: #00B0DC;
+}
 
 
 

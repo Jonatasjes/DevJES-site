@@ -1,0 +1,138 @@
+
+/* tamanho padrão para Tablets */
+@media only screen  and (max-width: 768px) {
+
+#formacao .section-formacao {
+    width: 100%;
+}
+
+}
+
+/* tamanho padrão para smartphones */
+@media only screen  and (max-width: 480px) {
+.caixa {
+    padding: 20px 10px;
+}
+#sobre .apresentacao {
+	width: 100%;
+    min-width: auto;
+    margin: 0 0px;
+    padding: 20px 0px;
+    text-align: justify;
+}
+#sobre .apresentacao h3 {
+	font-size: 1.3rem;
+	margin-bottom: 20px;
+}
+#servicos .section-valor {
+    width: 100%;
+}
+#skills .section-skills {
+	margin: 15px 0;
+}
+#skills .section-skillsbar {
+	width: 100%;
+}
+#skills .skillsbar-bar {
+    width: 100%;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+#filho1 {
+    width: 80%;
+    height: 100%;
+    background-color: #00B0DC;
+    border-radius: 5px;
+}
+#filho2 {
+    width: 80%;
+    height: 100%;
+    background-color: #00B0DC;
+    border-radius: 5px;
+}
+#filho3 {
+    width: 50%;
+    height: 100%;
+    background-color: #00B0DC;
+    border-radius: 5px;
+}
+#filho4 {
+    width: 50%;
+    height: 100%;
+    background-color: #00B0DC;
+    border-radius: 5px;
+}
+#filho5 {
+    width: 50%;
+    height: 100%;
+    background-color: #00B0DC;
+    border-radius: 5px;
+}
+#filho6 {
+    width: 50%;
+    height: 100%;
+    background-color: #00B0DC;
+    border-radius: 5px;
+}
+#filho7 {
+    width: 20%;
+    height: 100%;
+    background-color: #00B0DC;
+    border-radius: 5px;
+}
+#filho8 {
+    width: 90%;
+    height: 100%;
+    background-color: #00B0DC;
+    border-radius: 5px;
+}
+#formacao .section-formacao {
+    width: 100%;
+    margin: 15px 0;
+    padding: 25px 10px;
+}
+#formacao .valor-conteudo {
+    flex-direction: column;
+}
+#formacao .secundaria .valor-titulo {
+    grid-template-columns: 10% 78% 12%;
+}
+#formacao .valor-conteudo .img-curso {
+    margin-right: 0;
+}
+#formacao .valor-conteudo span {
+    margin-bottom: 15px;
+}
+#formacao .valor-conteudo p {
+    text-align: justify;
+}
+
+#experiencia .section-titulo {
+	text-align: center;
+}
+#experiencia .section-valor {
+    width: 100%;
+    text-align: justify;
+}
+#contato .formulario {
+    width: 100%;
+    margin: 20px 0;
+}
+#contato .formulario .form-name {
+    display: flex;
+    flex-direction: column;
+}
+#contato .formulario #nome {
+    margin-right: 0;
+    margin-bottom: 15px;
+}
+#rodape {
+	height: auto;
+    flex-direction: column-reverse;
+}
+#rodape .logo {
+    margin-bottom: 15px;
+}
+
+}

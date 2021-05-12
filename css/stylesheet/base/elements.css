@@ -5,130 +5,45 @@
 }
 
 a.btn-b {
-	font-size: 14px;
-	font-weight: 300;
 	text-align: center;
 }
-#cabeca .section-cabeca {
-	background-color: rgba(0, 0, 0, 0.4)
-}
-
 .menu a {
 	z-index: 5;
 	padding: 10px;
-	font-size: 15px;
-	color: #fff;
+	transition: .5s;
 }
 .menu a:hover {
 	z-index: 5;
-	font-size: 15px;
-	text-decoration: none;
-	color: #00B0DC;
-}
-#capa h1 {
-	font-size: 40px;
-	font-weight: 600;
-	color: #fff;
-}
-#capa h2 {
-	font-size: 20px;
-	font-weight: 100;
-	color: #fff;
-}
-#capa a {
-	font-size: 14px;
-	color: #fff;
-}
-#sobre h3 {
-	font-size: 30px;
-	font-weight: 600;
-}
-#sobre span.titulo {
-	font-weight: 700;
-	color: #a1a1a1;
-}
-#sobre span.valor {
-	font-weight: 400;
 }
 #skill-btn {
+	transition: .5s;
     background-color: #00B0DC;
 }
+#skill-btn:hover {
+	color: #333;
+	border-color: #00B0DC;
+    background-color: #fff;
+}
 #down-btn {
+	transition: .5s;
 	background-color: #fff;
 	border: 1px solid #00B0DC;
 	color: #262626;
 }
-
-.section-titulo h3 {
-	font-size: 40px;
-	font-weight: 400;
-	color: #262626;
-}
-
-.section-titulo span {
-	font-size: 40px;
-	font-weight: 400;
-	color: #00B0DC;
-}
-
-#servicos h4 {
-	font-size: 20px;
-	font-weight: 600;
-}
-#servicos i {
-	font-size: 40px;
-    color: #00B0DC;
-}
-#skills h6  {
-	font-weight: 600;
+#down-btn:hover {
+	background-color: #00B0DC;
 	color: #fff;
 }
-#skills h6.skillsbar-titulo  {
-	font-size: 20px;
-}
-#skills h6.skillsbar-percent  {
-	font-size: 12px;
-}
-#formacao i {
-	font-size: 20px;
-	color: #00B0DC;
-}
+
+
 .titulo h5 {
-	font-size: 16px;
-	font-weight: 600;
 	margin: 0;
 }
-.titulo span {
-	font-size: 15px;
-	font-weight: 600;
-	color: #00B0DC;
-}
+
 .titulo h6 {
-	font-size: 14px;
-	font-weight: 600;
 	margin: 0;
 }
 #contato .info i {
-	font-size: 25px;
-	color: #00B0DC;
-}
-#contato .info h2 {
-	font-size: 12px;
-	font-weight: 600;
-}
-#contato .info p, #contato .info p a {
-	font-size: 11px;
-	font-weight: 400;
-	color: #777;
-}
-#rodape p {
-	font-size: 15px;
-	font-weight: 400;
-	color: #fff;
-}
-#rodape a {
-	font-size: 15px;
-	font-weight: 400;
 	color: #00B0DC;
 }
 #rodape a:hover {
@@ -141,49 +56,61 @@ a.btn-b {
     border-radius: 5px;
 }
 #filho1 {
-    width: 420px;
+    width: 80%;
     height: 100%;
     background-color: #00B0DC;
     border-radius: 5px;
 }
 #filho2 {
-    width: 420px;
+    width: 80%;
     height: 100%;
     background-color: #00B0DC;
     border-radius: 5px;
 }
 #filho3 {
-    width: 262px;
+    width: 70%;
     height: 100%;
     background-color: #00B0DC;
     border-radius: 5px;
 }
 #filho4 {
-    width: 262px;
+    width: 70%;
     height: 100%;
     background-color: #00B0DC;
     border-radius: 5px;
 }
 #filho5 {
-    width: 262px;
+    width: 50%;
     height: 100%;
     background-color: #00B0DC;
     border-radius: 5px;
 }
 #filho6 {
-    width: 105px;
+    width: 50%;
     height: 100%;
     background-color: #00B0DC;
     border-radius: 5px;
 }
 #filho7 {
-    width: 262px;
+    width: 20%;
     height: 100%;
     background-color: #00B0DC;
     border-radius: 5px;
 }
 #filho8 {
-    width: 472px;
+    width: 30%;
+    height: 100%;
+    background-color: #00B0DC;
+    border-radius: 5px;
+}
+#filho9 {
+    width: 50%;
+    height: 100%;
+    background-color: #00B0DC;
+    border-radius: 5px;
+}
+#filho10 {
+    width: 90%;
     height: 100%;
     background-color: #00B0DC;
     border-radius: 5px;

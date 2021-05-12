@@ -1,0 +1,30 @@
+
+/* tamanho padrão para Tablets */
+@media only screen  and (max-width: 768px) {
+
+}
+
+/* tamanho padrão para smartphones */
+@media only screen  and (max-width: 480px) {
+
+.section-titulo h3 {
+	font-size: 2rem;
+}
+.section-titulo h3 span {
+	font-size: 2rem;
+}
+#formacao .section-titulo h3 {
+	font-size: 1.5rem;
+}
+#formacao .section-titulo h3 span {
+	font-size: 1.5rem;
+}
+#formacao .titulo h5 {
+    font-size: 1rem;
+}
+#experiencia .section-titulo h3 {
+    font-size: 1.8rem;
+}
+#experiencia .section-titulo h3 span {
+    font-size: 1.8rem;
+}

@@ -2,30 +2,45 @@
 <html>
 <head>
 	<meta charset="utf-8"/>
+	<meta name="author" content="Jonatas Eleoterio">
+	<meta name="viewport" content="width:device-width, height=device-height, initial-scale=1">
 	<title>Dev.JES</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<script src="js/jquery/jquery-3.4.1.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/stylesheet/base/reset.css"/>
     <link rel="stylesheet" type="text/css" href="css/stylesheet/base/fonts.css"/>
     <link rel="stylesheet" type="text/css" href="css/stylesheet/base/elements.css"/>
     <link rel="stylesheet" type="text/css" href="css/stylesheet/layout/header.css"/>
     <link rel="stylesheet" type="text/css" href="css/stylesheet/layout/main.css"/>
     <link rel="stylesheet" type="text/css" href="css/stylesheet/layout/footer.css"/>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-	<script src="https://kit.fontawesome.com/8495600fe7.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/stylesheet/base/mobile-fonts.css"/>
+
+    <link rel="stylesheet" type="text/css" href="css/stylesheet/layout/mobile-header.css"/>
+    <link rel="stylesheet" type="text/css" href="css/stylesheet/layout/mobile-main.css"/>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-	<header>
+	<header class="mobile-device">
 
-		<div id="particles-js">
+		<!-- <div id="particles-js">
 
-		</div>
+		</div> -->
 
 		<div id="header">
-
+			<div id="fundo"></div>
 			<div id="cabeca">
-				<div class="section-cabeca">
-					<a href="https://devjes.com.br"><img src="img/logo.png" class="logo"/></a>
+				<div id="section-cabeca" class="section-cabeca close-menu-bars">
+					<div class="menu-bars">
+						<div class="logo-dev">
+							<a href="https://devjes.com.br" ><img src="img/logo.png" class="logo"/></a>		
+						</div>
+						<div class="bars-dev">
+							<button id="menu-b-bars">
+								<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-bars svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"/></svg>
+							</button>
+						</div>
+					</div>
 					
 					<nav class="menu">
 						<ul>
@@ -49,6 +64,7 @@
 							</li>
 						</ul> <!--  /menu  -->
 					</nav>
+				
 				</div>
 			</div> <!--  /cabeca  -->
 
@@ -59,19 +75,22 @@
                 <h1>Jônatas Eleotério</h1>
                 <h2>Desenvolvedor Web</h2>
                 
-				<div class="midiais-sociais">
+				<div class="midias-sociais">
 					<ul>
 						<li>
-							<a href="https://www.linkedin.com/in/jeseleoterios" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+							<a href="https://www.linkedin.com/in/jeseleoterios" target="_blank"><i class="fab">
+								<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin-in" class="svg-midias svg-inline--fa fa-linkedin-in fa-w-14" role="img" viewBox="0 0 448 512"><path fill="currentColor" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg>
+							</i></a>
 						</li>
 						<li>
-							<a href="https://twitter.com/JonatasEleoterS" target="_blank"><i class="fab fa-twitter"></i></a>
+							<a href="https://api.whatsapp.com/send?phone=5521972677204&text=Desenvolvedor%20DevJES%20" target="_blank"><i class="fab">
+								<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="whatsapp" class="svg-midias svg-inline--fa fa-whatsapp fa-w-14" role="img" viewBox="0 0 448 512"><path fill="currentColor" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+							</i></a>
 						</li>
-						<li>
-							<a href="https://api.whatsapp.com/send?phone=5521997184684&text=Desenvolvedor%20DevJES%20" target="_blank"><i class="fab fa-whatsapp"></i></a>
-						</li>
-						<li>
-							<a href="tel:+55021997184684"><i class="fas fa-mobile-alt" target="_blank"></i></a>
+						<li class="midias-sociais-li">
+							<a href="tel:+55021972677204"><i class="fas" target="_blank">
+								<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="mobile-alt" class="svg-midias svg-inline--fa fa-mobile-alt fa-w-10" role="img" viewBox="0 0 320 512"><path fill="currentColor" d="M272 0H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h224c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zM160 480c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm112-108c0 6.6-5.4 12-12 12H60c-6.6 0-12-5.4-12-12V60c0-6.6 5.4-12 12-12h200c6.6 0 12 5.4 12 12v312z"/></svg>
+							</i></a>
 						</li>
 					</ul>
 				</div> <!--  /capa-midiais-sociais  -->
@@ -84,7 +103,7 @@
 
 	<main>
 		
-		<div id="sobre" class="caixa">
+		<section id="sobre" class="caixa">
 
 			
 			<div class="moldura">
@@ -95,8 +114,9 @@
 
                 <section>
                     <h3>DESENVOLVEDOR FRONT-END</h3>
-                    <p>Sou <b>Jônatas Eleotério Silva</b>, observador, dinâmico, criativo, reconhecido pelo profissionalismo e por sempre procurar adquirir novos conhecimentos para agregar a equipe.</p>
-              		<p>Como projetista tenho bastante experiência em projetos grandes e complexos, hoje pretendo utilizar essa minha experiência para atuar como desenvolvedor. Já trabalho em alguns projetos próprios elaborando os designers com CorelDRAW, utilizando HTML, CSS, Bootstrap, Javascript, jQuery.</p>
+					<p>Olá! Sou <b>Jônatas</b>, tenho 28 anos,  observador, dinâmico, criativo, reconhecido pelo profissionalismo e por sempre procurar adquirir novos conhecimentos para agregar a equipe. Atualmente trabalho como Front-end em uma agência especializada em implementação e manutenção de e-commerces legados e IO na plataforma vtex.</p>
+					<p>Trabalhei como projetista cadista durante 7 anos. Minha maior conquista foi uma iniciativa ao perceber o tempo gasto com tagueamentos manuais e retrabalhos, busquei conhecimento de programação e através do dialeto AutoLisp pude reduzir o tempo de um dia de trabalho para 1 à 2 horas. Nesse tempo pude participar atívamente de partes burocraticas como utilização de cms(oracle), requisições de compra, cadastros de items, adiquirindo uma visão geral de processos de industrialização, projeto e implantação.</p>
+              		<p>Hoje pretendo atuar com os frameworks React e nodeJS aprofundando meus conhecimentos nas tecnologias, e futuramente pretendo me especializar no backend.</p>
                 </section>
 
 				<div class="informacoes-contato">
@@ -106,7 +126,7 @@
 							<span class="titulo">Nome:</span><span class="valor">Jônatas Eleotério Silva</span>
 						</li>
 						<li>
-							<span class="titulo">Idade:</span><span class="valor">27 anos</span>
+							<span class="titulo">Idade:</span><span class="valor">28 anos</span>
 						</li>
 						<li>
 							<span class="titulo">Email:</span><span class="valor">contato@devjes.com.br</span>
@@ -114,7 +134,7 @@
 					</ul>
 					<ul class="lista-direita">
 						<li>
-							<span class="titulo">Cel:</span><span class="valor">+55 021 9 9718 4684</span>
+							<span class="titulo">Cel:</span><span class="valor">+55 021 9 7267 7204</span>
 						</li>
 						<li>
 							<span class="titulo">End.:</span><span class="valor">São João de Meriti - RJ</span>
@@ -130,9 +150,9 @@
               		<a id="down-btn" target="_blank" class="btn-b btn btn-primary " href="cv/cv.pdf" role="button" download="curriculo">DOWNLOAD CV</a>
                 </div>  
 			</div> <!--  /apresentacao  -->
-		</div> <!--  /sobre  -->
+		</section> <!--  /sobre  -->
 
-		<div id="servicos" class="caixa">
+		<section id="servicos" class="caixa">
 
 			<div class="section-titulo">
 				<h3>MEUS <span>SERVIÇOS</span></h3>
@@ -141,21 +161,27 @@
 			<div class="section-valor">
 
 				<div class="servico">
-					<i class="fas fa-project-diagram"></i>
-					<h4>Projetista</h4>
-					<span>Desenhos em AutoCAD 2D</span>
-					<p>Unifilar, interligação, planta baixa, cortes, fachadas, rotas de infraestrutura, típicos de instalaçãoo.</p>
+					<i class="far">
+						<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="network-wired" class="svg-servico svg-inline--fa fa-network-wired fa-w-20" role="img" viewBox="0 0 640 512"><path fill="currentColor" d="M640 264v-16c0-8.84-7.16-16-16-16H344v-40h72c17.67 0 32-14.33 32-32V32c0-17.67-14.33-32-32-32H224c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h72v40H16c-8.84 0-16 7.16-16 16v16c0 8.84 7.16 16 16 16h104v40H64c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h160c17.67 0 32-14.33 32-32V352c0-17.67-14.33-32-32-32h-56v-40h304v40h-56c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h160c17.67 0 32-14.33 32-32V352c0-17.67-14.33-32-32-32h-56v-40h104c8.84 0 16-7.16 16-16zM256 128V64h128v64H256zm-64 320H96v-64h96v64zm352 0h-96v-64h96v64z"/></svg>
+					</i>
+					<h4>Desenvolvedor WEB</h4>
+					<span>Front-End</span>
+					<p>Bons conhecimentos em HTML, CSS, Javascript e jQuery. Aprimorando meus conhecimentos em Typescript, ReactJS, NodeJS, etc.</p>
 				</div>
-				<div class="servico">
-					<i class="far fa-window-maximize"></i>
-					<h4>Projetista</h4>
-					<span>Desenhos em AutoCAD 2D</span>
-					<p>Unifilar, interligação, planta baixa, cortes, fachadas, rotas de infraestrutura, típicos de instalaçãoo.</p>
-				</div>
-			</div> <!--  /section-valor  -->
-		</div> <!--  /serviços serviçoes  -->
 
-		<div id="skills" class="caixa">
+				<div class="servico">
+					<i class="fas">
+						<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="project-diagram" class="svg-servico svg-inline--fa fa-project-diagram fa-w-20" role="img" viewBox="0 0 640 512"><path fill="currentColor" d="M384 320H256c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h128c17.67 0 32-14.33 32-32V352c0-17.67-14.33-32-32-32zM192 32c0-17.67-14.33-32-32-32H32C14.33 0 0 14.33 0 32v128c0 17.67 14.33 32 32 32h95.72l73.16 128.04C211.98 300.98 232.4 288 256 288h.28L192 175.51V128h224V64H192V32zM608 0H480c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h128c17.67 0 32-14.33 32-32V32c0-17.67-14.33-32-32-32z"/></svg>
+					</i>
+					<h4>Projetista</h4>
+					<span>Desenhos em AutoCAD 2D</span>
+					<p>Unifilar, interligação, planta baixa, cortes, fachadas, rotas de infraestrutura, típicos de instalaçãoo. Além de criação de algumas ferramentas com o dialeto AutoLisp.</p>
+				</div>
+				
+			</div> <!--  /section-valor  -->
+		</section> <!--  /serviços serviçoes  -->
+
+		<section id="skills" class="caixa">
 
 			<div class="section-titulo">
 				<h3>MINHAS <span>SKILLS</span></h3>
@@ -178,7 +204,7 @@
 
 					<div class="skillsbar">
 						<div class="skillsbar-val">
-							<h6 class="skillsbar-titulo">CSS3</h6>
+							<h6 class="skillsbar-titulo">CSS3 (SASS)</h6>
 							<h6 class="skillsbar-percent">80%</h6>
 						</div>
 						<div class="skillsbar-bar">
@@ -189,7 +215,7 @@
 					<div class="skillsbar">
 						<div class="skillsbar-val">
 							<h6 class="skillsbar-titulo">Javascript</h6>
-							<h6 class="skillsbar-percent">50%</h6>
+							<h6 class="skillsbar-percent">70%</h6>
 						</div>
 						<div class="skillsbar-bar">
 							<div id="filho3" class="skillsbar-child"></div>
@@ -199,10 +225,20 @@
 					<div class="skillsbar">
 						<div class="skillsbar-val">
 							<h6 class="skillsbar-titulo">jQuery</h6>
-							<h6 class="skillsbar-percent">50%</h6>
+							<h6 class="skillsbar-percent">70%</h6>
 						</div>
 						<div class="skillsbar-bar">
 							<div id="filho4" class="skillsbar-child"></div>
+						</div>
+					</div>
+
+					<div class="skillsbar">
+						<div class="skillsbar-val">
+							<h6 class="skillsbar-titulo">ReactJS</h6>
+							<h6 class="skillsbar-percent">50%</h6>
+						</div>
+						<div class="skillsbar-bar">
+							<div id="filho5" class="skillsbar-child"></div>
 						</div>
 					</div>
 
@@ -212,31 +248,41 @@
 
 					<div class="skillsbar">
 						<div class="skillsbar-val">
+							<h6 class="skillsbar-titulo">NodeJS</h6>
+							<h6 class="skillsbar-percent">50%</h6>
+						</div>
+						<div class="skillsbar-bar">
+							<div id="filho6" class="skillsbar-child"></div>
+						</div>
+					</div>
+
+					<div class="skillsbar">
+						<div class="skillsbar-val">
+							<h6 class="skillsbar-titulo">Java(POO - Faculdade)</h6>
+							<h6 class="skillsbar-percent">20%</h6>
+						</div>
+						<div class="skillsbar-bar">
+							<div id="filho7" class="skillsbar-child"></div>
+						</div>
+					</div>
+
+					<div class="skillsbar">
+						<div class="skillsbar-val">
+							<h6 class="skillsbar-titulo">WordPress</h6>
+							<h6 class="skillsbar-percent">30%</h6>
+						</div>
+						<div class="skillsbar-bar">
+							<div id="filho8" class="skillsbar-child"></div>
+						</div>
+					</div>
+
+					<div class="skillsbar">
+						<div class="skillsbar-val">
 							<h6 class="skillsbar-titulo">Bootstrap</h6>
 							<h6 class="skillsbar-percent">50%</h6>
 						</div>
 						<div class="skillsbar-bar">
-							<div id="filho5" class="skillsbar-child"></div>
-						</div>
-					</div>
-
-					<div class="skillsbar">
-						<div class="skillsbar-val">
-							<h6 class="skillsbar-titulo">Ajax</h6>
-							<h6 class="skillsbar-percent">20%</h6>
-						</div>
-						<div class="skillsbar-bar">
-							<div id="filho6"class="skillsbar-child"></div>
-						</div>
-					</div>
-
-					<div class="skillsbar">
-						<div class="skillsbar-val">
-							<h6 class="skillsbar-titulo">CorewDRAW</h6>
-							<h6 class="skillsbar-percent">50%</h6>
-						</div>
-						<div class="skillsbar-bar">
-							<div id="filho7" class="skillsbar-child"></div>
+							<div id="filho9" class="skillsbar-child"></div>
 						</div>
 					</div>
 
@@ -246,7 +292,7 @@
 							<h6 class="skillsbar-percent">90%</h6>
 						</div>
 						<div class="skillsbar-bar">
-							<div id="filho8" class="skillsbar-child"></div>
+							<div id="filho10" class="skillsbar-child"></div>
 						</div>
 					</div>
 
@@ -254,9 +300,9 @@
 
 			</div> <!--  /section-skills  -->
 			
-		</div> <!--  /skills  -->
+		</section> <!--  /skills  -->
 
-		<div id="formacao" class="caixa">
+		<section id="formacao" class="caixa">
 
 			<div class="section-titulo">
 				<h3>FORMAÇÃO <span>ACADÊMICA</span></h3>
@@ -265,71 +311,328 @@
 			<div class="section-formacao">
 
 				<div class="principal">
-					<div class="section-valor">
-						<i class="far fa-bookmark"></i>
-						<div class="titulo">
-							<h5>Sistema de Informação (Bacharelado)</h5>
-							<span>Univercidade Veiga de Almeida - Cursando</span>
+					<div class="section-valor formacao-principal">
+						<div class="valor-titulo">
+							<i class="far">
+								<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="far" data-icon="bookmark" class="svg svg-inline--fa fa-bookmark fa-w-12" role="img" viewBox="0 0 384 512"><path fill="currentColor" d="M336 0H48C21.49 0 0 21.49 0 48v464l192-112 192 112V48c0-26.51-21.49-48-48-48zm0 428.43l-144-84-144 84V54a6 6 0 0 1 6-6h276c3.314 0 6 2.683 6 5.996V428.43z"/></svg>
+							</i>
+							<div class="titulo">
+								<h5>Sistema de Informação (Bacharelado)</h5>
+								<span>Univercidade Veiga de Almeida - Cursando</span>
+							</div>
 						</div>
 					</div>
 				</div> <!--  /principal  -->
 
 				<div class="secundaria">
 
-					<div class="section-valor">
-						<i class="fas fa-paperclip"></i>
-						<div class="titulo">
-							<h5>Curso Completo do Desenvolvedor Web</h5>
-							<span>HCODE - Udemy - (Desembro de 2018) - Completo</span>
+					<div class="section-valor formacao-secundaria">
+						<div class="valor-titulo">
+							<i class="fas">
+								<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="paperclip" class="svg svg-inline--fa fa-paperclip fa-w-14" role="img" viewBox="0 0 448 512"><path fill="currentColor" d="M43.246 466.142c-58.43-60.289-57.341-157.511 1.386-217.581L254.392 34c44.316-45.332 116.351-45.336 160.671 0 43.89 44.894 43.943 117.329 0 162.276L232.214 383.128c-29.855 30.537-78.633 30.111-107.982-.998-28.275-29.97-27.368-77.473 1.452-106.953l143.743-146.835c6.182-6.314 16.312-6.422 22.626-.241l22.861 22.379c6.315 6.182 6.422 16.312.241 22.626L171.427 319.927c-4.932 5.045-5.236 13.428-.648 18.292 4.372 4.634 11.245 4.711 15.688.165l182.849-186.851c19.613-20.062 19.613-52.725-.011-72.798-19.189-19.627-49.957-19.637-69.154 0L90.39 293.295c-34.763 35.56-35.299 93.12-1.191 128.313 34.01 35.093 88.985 35.137 123.058.286l172.06-175.999c6.177-6.319 16.307-6.433 22.626-.256l22.877 22.364c6.319 6.177 6.434 16.307.256 22.626l-172.06 175.998c-59.576 60.938-155.943 60.216-214.77-.485z"/></svg>
+							</i>
+							<div class="titulo">
+								<h5>API Restful Javascript com Node.js, Typescript, TypeORM etc</h5>
+								<span>Jorge Aluizio Alves de Souza(Fullstack Developer) - Udemy - Cursando</span>
+							</div>
+							
+							<svg class="seta-conteudo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" width="45px" height="45px"  version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; fill-rule:evenodd; clip-rule:evenodd; cursor:pointer;" viewBox="0 0 5000 3000">
+							 <defs>
+							  <style type="text/css">
+							   <![CDATA[
+							    .fil0 {fill:#00B0DC}
+							   ]]>
+							  </style>
+							 </defs>
+							 <g id="Camada_x0020_1">
+							  <metadata id="CorelCorpID_0Corel-Layer"/>
+							  <path class="fil0" d="M2472 1113c0,1 214,182 247,207l1444 1203c400,374 943,-124 411,-519l-1732 -1442c-431,-376 -468,-215 -963,170 -202,157 -1661,1268 -1713,1470 -80,311 255,522 541,325l430 -347c62,-49 93,-79 157,-126 349,-253 865,-728 1180,-940z"/>
+							 </g>
+							</svg>
+							
 						</div>
+						<div class="valor-conteudo" style="display: none; overflow: hidden;">
+							<a href="https://www.udemy.com/course/api-restful-de-vendas/" target="_blank">
+								<img class="img-curso" src="img/nd-dk-pg.jpg">
+								<span>Click aqui e saiba mais...</span>
+							</a>
+                            <p>Olá Dev, meu nome é Jorge Aluizio! Ao longo dessa jornada construiremos uma aplicação backend para gestão de vendas com funcionalidades para criação de cadastro de produtos, cadastro de clientes, pedidos de compras e uma completa gestão de usuários da aplicação, com autenticação via Token JWT, recuperação de senha por email, atualização de perfil, atualização de avatar, e muito mais. Através do TypeORM implementaremos Entidades e Repositórios para cada recurso a ser consumido na API Aplicaremos conceitos de boas práticas e qualidade no código, usando Design Patterns, Domain Driven Design (DDD) e Princípios SOLID, além de introduzir Testes Automatizados com o framework Jest. Este curso estará em constante evolução, com conteúdos sendo adicionados regularmente objetivando a melhor experiência possível para você que busca se qualificar e evoluir de forma constante, porém ordenada, com tudo organizado e fazendo sentido.
+								
+								
+								</p>
+                    	</div>
 					</div>
-					<div class="section-valor">
-						<i class="fas fa-paperclip"></i>
-						<div class="titulo">
-							<h5>Aprenda Javascript, jQuery, Ajax Json do Zero na Prática</h5>
-							<span>Professor Ivan Lourenço Gomes - Udemy - Completo</span>
+
+					<div class="section-valor formacao-secundaria">
+						<div class="valor-titulo">
+							<i class="fas">
+								<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="paperclip" class="svg svg-inline--fa fa-paperclip fa-w-14" role="img" viewBox="0 0 448 512"><path fill="currentColor" d="M43.246 466.142c-58.43-60.289-57.341-157.511 1.386-217.581L254.392 34c44.316-45.332 116.351-45.336 160.671 0 43.89 44.894 43.943 117.329 0 162.276L232.214 383.128c-29.855 30.537-78.633 30.111-107.982-.998-28.275-29.97-27.368-77.473 1.452-106.953l143.743-146.835c6.182-6.314 16.312-6.422 22.626-.241l22.861 22.379c6.315 6.182 6.422 16.312.241 22.626L171.427 319.927c-4.932 5.045-5.236 13.428-.648 18.292 4.372 4.634 11.245 4.711 15.688.165l182.849-186.851c19.613-20.062 19.613-52.725-.011-72.798-19.189-19.627-49.957-19.637-69.154 0L90.39 293.295c-34.763 35.56-35.299 93.12-1.191 128.313 34.01 35.093 88.985 35.137 123.058.286l172.06-175.999c6.177-6.319 16.307-6.433 22.626-.256l22.877 22.364c6.319 6.177 6.434 16.307.256 22.626l-172.06 175.998c-59.576 60.938-155.943 60.216-214.77-.485z"/></svg>
+							</i>
+							<div class="titulo">
+								<h5>Node.js, Express, MongoDB & More: The Complete Bootcamp 2021</h5>
+								<span>Jonas Schmedtmann(Web Developer & Teacher) - Udemy - Cursando</span>
+							</div>
+							
+							<svg class="seta-conteudo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" width="45px" height="45px"  version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; fill-rule:evenodd; clip-rule:evenodd; cursor:pointer;" viewBox="0 0 5000 3000">
+							 <defs>
+							  <style type="text/css">
+							   <![CDATA[
+							    .fil0 {fill:#00B0DC}
+							   ]]>
+							  </style>
+							 </defs>
+							 <g id="Camada_x0020_1">
+							  <metadata id="CorelCorpID_0Corel-Layer"/>
+							  <path class="fil0" d="M2472 1113c0,1 214,182 247,207l1444 1203c400,374 943,-124 411,-519l-1732 -1442c-431,-376 -468,-215 -963,170 -202,157 -1661,1268 -1713,1470 -80,311 255,522 541,325l430 -347c62,-49 93,-79 157,-126 349,-253 865,-728 1180,-940z"/>
+							 </g>
+							</svg>
+							
 						</div>
+						<div class="valor-conteudo" style="display: none; overflow: hidden;">
+							<a href="https://www.udemy.com/course/nodejs-express-mongodb-bootcamp/" target="_blank">
+								<img class="img-curso" src="img/nd-ex-mg.jpg">
+								<span>Click aqui e saiba mais...</span>
+							</a>
+                            <p>Welcome to the Complete Node.js, Express, and MongoDB Bootcamp, your fast track to modern back-end development. This course is the perfect all-in-one package that will take you from a complete beginner to an advanced, highly-skilled Node.js developer. Like all my other courses, this one is completely project-based! And not just any project: it's a complete, beautiful, and feature-rich application, containing both a RESTful API and a server-side rendered website. It's the most fantastic and complete project that you will find in any Node.js course on the internet! By building this huge project, you will learn all the skills that you need in order to plan, build, and deploy your own modern back-end applications with Node.js and related technologies.</p>
+                    	</div>
 					</div>
-					<div class="section-valor">
-						<i class="fas fa-paperclip"></i>
-						<div class="titulo">
-							<h5>CSS: Um passo adiante</h5>
-							<span>Tárcio Zemel - Udemy - Completo</span>
+
+					<div class="section-valor formacao-secundaria">
+						<div class="valor-titulo">
+							<i class="fas">
+								<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="paperclip" class="svg svg-inline--fa fa-paperclip fa-w-14" role="img" viewBox="0 0 448 512"><path fill="currentColor" d="M43.246 466.142c-58.43-60.289-57.341-157.511 1.386-217.581L254.392 34c44.316-45.332 116.351-45.336 160.671 0 43.89 44.894 43.943 117.329 0 162.276L232.214 383.128c-29.855 30.537-78.633 30.111-107.982-.998-28.275-29.97-27.368-77.473 1.452-106.953l143.743-146.835c6.182-6.314 16.312-6.422 22.626-.241l22.861 22.379c6.315 6.182 6.422 16.312.241 22.626L171.427 319.927c-4.932 5.045-5.236 13.428-.648 18.292 4.372 4.634 11.245 4.711 15.688.165l182.849-186.851c19.613-20.062 19.613-52.725-.011-72.798-19.189-19.627-49.957-19.637-69.154 0L90.39 293.295c-34.763 35.56-35.299 93.12-1.191 128.313 34.01 35.093 88.985 35.137 123.058.286l172.06-175.999c6.177-6.319 16.307-6.433 22.626-.256l22.877 22.364c6.319 6.177 6.434 16.307.256 22.626l-172.06 175.998c-59.576 60.938-155.943 60.216-214.77-.485z"/></svg>
+							</i>
+							<div class="titulo">
+								<h5>Curso React + Redux: Fundamentos e 2 Apps do Absoluto ZERO!</h5>
+								<span>Cod3r Cursos - Udemy - Concluído</span>
+							</div>
+							
+							<svg class="seta-conteudo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" width="45px" height="45px"  version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; fill-rule:evenodd; clip-rule:evenodd; cursor:pointer;" viewBox="0 0 5000 3000">
+							 <defs>
+							  <style type="text/css">
+							   <![CDATA[
+							    .fil0 {fill:#00B0DC}
+							   ]]>
+							  </style>
+							 </defs>
+							 <g id="Camada_x0020_1">
+							  <metadata id="CorelCorpID_0Corel-Layer"/>
+							  <path class="fil0" d="M2472 1113c0,1 214,182 247,207l1444 1203c400,374 943,-124 411,-519l-1732 -1442c-431,-376 -468,-215 -963,170 -202,157 -1661,1268 -1713,1470 -80,311 255,522 541,325l430 -347c62,-49 93,-79 157,-126 349,-253 865,-728 1180,-940z"/>
+							 </g>
+							</svg>
+							
 						</div>
+						<div class="valor-conteudo" style="display: none; overflow: hidden;">
+							<a href="https://www.udemy.com/course/react-redux-pt/" target="_blank">
+								<img class="img-curso" src="img/rc-rd-nd.jpg">
+								<span>Click aqui e saiba mais...</span>
+							</a>
+                            <p>A proposta do curso de React é te guiar passo a passo na construções de duas aplicações completas, mas se você ainda está iniciando no mundo do React, não tem problema porque antes de entrarmos no desenvolvimento das aplicações, serão apresentados vários exercícios para ensinar os fundamentos de Webpack, React, Redux e todo o ecossistema envolvido no processo. Inclusive tecnologias de backend, como Node, Express e MongoDB.</p>
+                    	</div>
 					</div>
-					<div class="section-valor">
-						<i class="fas fa-paperclip"></i>
-						<div class="titulo">
-							<h5>Flexbox - O guia completo</h5>
-							<span>Tárcio Zemel - Udemy - Completo</span>
+
+					<div class="section-valor formacao-secundaria">
+						<div class="valor-titulo">
+							<i class="fas">
+								<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="paperclip" class="svg svg-inline--fa fa-paperclip fa-w-14" role="img" viewBox="0 0 448 512"><path fill="currentColor" d="M43.246 466.142c-58.43-60.289-57.341-157.511 1.386-217.581L254.392 34c44.316-45.332 116.351-45.336 160.671 0 43.89 44.894 43.943 117.329 0 162.276L232.214 383.128c-29.855 30.537-78.633 30.111-107.982-.998-28.275-29.97-27.368-77.473 1.452-106.953l143.743-146.835c6.182-6.314 16.312-6.422 22.626-.241l22.861 22.379c6.315 6.182 6.422 16.312.241 22.626L171.427 319.927c-4.932 5.045-5.236 13.428-.648 18.292 4.372 4.634 11.245 4.711 15.688.165l182.849-186.851c19.613-20.062 19.613-52.725-.011-72.798-19.189-19.627-49.957-19.637-69.154 0L90.39 293.295c-34.763 35.56-35.299 93.12-1.191 128.313 34.01 35.093 88.985 35.137 123.058.286l172.06-175.999c6.177-6.319 16.307-6.433 22.626-.256l22.877 22.364c6.319 6.177 6.434 16.307.256 22.626l-172.06 175.998c-59.576 60.938-155.943 60.216-214.77-.485z"/></svg>
+							</i>
+							<div class="titulo">
+								<h5>Curso de JavaScript e TypeScript do básico ao avançado 2021</h5>
+								<span>Luiz Otávio Miranda(Desenvolvedor de Software) - Udemy - Concluído</span>
+							</div>
+							
+							<svg class="seta-conteudo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" width="45px" height="45px"  version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; fill-rule:evenodd; clip-rule:evenodd; cursor:pointer;" viewBox="0 0 5000 3000">
+							 <defs>
+							  <style type="text/css">
+							   <![CDATA[
+							    .fil0 {fill:#00B0DC}
+							   ]]>
+							  </style>
+							 </defs>
+							 <g id="Camada_x0020_1">
+							  <metadata id="CorelCorpID_0Corel-Layer"/>
+							  <path class="fil0" d="M2472 1113c0,1 214,182 247,207l1444 1203c400,374 943,-124 411,-519l-1732 -1442c-431,-376 -468,-215 -963,170 -202,157 -1661,1268 -1713,1470 -80,311 255,522 541,325l430 -347c62,-49 93,-79 157,-126 349,-253 865,-728 1180,-940z"/>
+							 </g>
+							</svg>
+							
 						</div>
+						<div class="valor-conteudo" style="display: none; overflow: hidden;">
+							<a href="https://www.udemy.com/course/curso-de-javascript-moderno-do-basico-ao-avancado/" target="_blank">
+								<img class="img-curso" src="img/js-ts.jpg">
+								<span>Click aqui e saiba mais...</span>
+							</a>
+                            <p>Curso de JavaScript e TypeScript do básico ao avançado - Atualizado para 2021 - O curso mais completo sobre todas as nuances do JavaScript você você vai encontrar na atualidade. Aprenda Javascript moderno (ES6+) para front-end (com Webpack, babel, React, React Hooks, Redux, HTML5, CSS3 e mais) e back-end (com Node, Express, MySQL / MariaDB, MongoDB, PostgreSQL, Next.Js, Strapi e mais) e se torne um(a) desenvolvedor(a) full stack. Este curso inclui JavaScript e TypeScript, você vai aprender ambas as linguagens no mesmo pacote.</p>
+                    	</div>
 					</div>
-					<div class="section-valor">
-						<i class="fas fa-paperclip"></i>
-						<div class="titulo">
-							<h5>CSS Grid: O sistema definitivo de layouts </h5>
-							<span>Tárcio Zemel - Udemy - Completo</span>
+
+					<div class="section-valor formacao-secundaria">
+						<div class="valor-titulo">
+							<i class="fas">
+								<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="paperclip" class="svg svg-inline--fa fa-paperclip fa-w-14" role="img" viewBox="0 0 448 512"><path fill="currentColor" d="M43.246 466.142c-58.43-60.289-57.341-157.511 1.386-217.581L254.392 34c44.316-45.332 116.351-45.336 160.671 0 43.89 44.894 43.943 117.329 0 162.276L232.214 383.128c-29.855 30.537-78.633 30.111-107.982-.998-28.275-29.97-27.368-77.473 1.452-106.953l143.743-146.835c6.182-6.314 16.312-6.422 22.626-.241l22.861 22.379c6.315 6.182 6.422 16.312.241 22.626L171.427 319.927c-4.932 5.045-5.236 13.428-.648 18.292 4.372 4.634 11.245 4.711 15.688.165l182.849-186.851c19.613-20.062 19.613-52.725-.011-72.798-19.189-19.627-49.957-19.637-69.154 0L90.39 293.295c-34.763 35.56-35.299 93.12-1.191 128.313 34.01 35.093 88.985 35.137 123.058.286l172.06-175.999c6.177-6.319 16.307-6.433 22.626-.256l22.877 22.364c6.319 6.177 6.434 16.307.256 22.626l-172.06 175.998c-59.576 60.938-155.943 60.216-214.77-.485z"/></svg>
+							</i>
+							<div class="titulo">
+								<h5>Curso Completo do Desenvolvedor Web</h5>
+								<span>HCODE - Udemy - (Dezembro de 2018) - Concluído</span>
+							</div>
+							
+							<svg class="seta-conteudo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" width="45px" height="45px"  version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; fill-rule:evenodd; clip-rule:evenodd; cursor:pointer;" viewBox="0 0 5000 3000">
+							 <defs>
+							  <style type="text/css">
+							   <![CDATA[
+							    .fil0 {fill:#00B0DC}
+							   ]]>
+							  </style>
+							 </defs>
+							 <g id="Camada_x0020_1">
+							  <metadata id="CorelCorpID_0Corel-Layer"/>
+							  <path class="fil0" d="M2472 1113c0,1 214,182 247,207l1444 1203c400,374 943,-124 411,-519l-1732 -1442c-431,-376 -468,-215 -963,170 -202,157 -1661,1268 -1713,1470 -80,311 255,522 541,325l430 -347c62,-49 93,-79 157,-126 349,-253 865,-728 1180,-940z"/>
+							 </g>
+							</svg>
+							
 						</div>
+						<div class="valor-conteudo" style="display: none; overflow: hidden;">
+							<a href="https://www.udemy.com/course/curso-html5-css3-javascript/" target="_blank">
+								<img class="img-curso" src="img/dev-web-comp.jpg">
+								<span>Click aqui e saiba mais...</span>
+							</a>
+                            <p>Aprenda em um curso completo HTML5, CSS3 e JavaScript com os comandos mais importantes. Crie um site completo e responsivo que se adapta no Tablet e Smartphone e em telas maiores. Trabalhe com imagens, áudio, vídeo e descubra boas práticas. Aprenda a criar um carrinho de compras completo com cálculo de frete para uma loja virtual, utilizando PHP e MySQL.</p>
+                    	</div>
 					</div>
-					<div class="section-valor">
-						<i class="fas fa-paperclip"></i>
-						<div class="titulo">
-							<h5>Sass placeholders: O jeito certo</h5>
-							<span>Tárcio Zemel - Udemy - Cursando</span>
+
+					<div class="section-valor formacao-secundaria">
+						<div class="valor-titulo">
+							<i class="fas">
+								<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="paperclip" class="svg svg-inline--fa fa-paperclip fa-w-14" role="img" viewBox="0 0 448 512"><path fill="currentColor" d="M43.246 466.142c-58.43-60.289-57.341-157.511 1.386-217.581L254.392 34c44.316-45.332 116.351-45.336 160.671 0 43.89 44.894 43.943 117.329 0 162.276L232.214 383.128c-29.855 30.537-78.633 30.111-107.982-.998-28.275-29.97-27.368-77.473 1.452-106.953l143.743-146.835c6.182-6.314 16.312-6.422 22.626-.241l22.861 22.379c6.315 6.182 6.422 16.312.241 22.626L171.427 319.927c-4.932 5.045-5.236 13.428-.648 18.292 4.372 4.634 11.245 4.711 15.688.165l182.849-186.851c19.613-20.062 19.613-52.725-.011-72.798-19.189-19.627-49.957-19.637-69.154 0L90.39 293.295c-34.763 35.56-35.299 93.12-1.191 128.313 34.01 35.093 88.985 35.137 123.058.286l172.06-175.999c6.177-6.319 16.307-6.433 22.626-.256l22.877 22.364c6.319 6.177 6.434 16.307.256 22.626l-172.06 175.998c-59.576 60.938-155.943 60.216-214.77-.485z"/></svg>
+							</i>
+							<div class="titulo">
+								<h5>Aprenda Javascript, jQuery, Ajax Json do Zero na Prática</h5>
+								<span>Professor Ivan Lourenço Gomes - Udemy - (Junho de 2019) - Concluído</span>
+							</div>
+							<svg class="seta-conteudo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" width="45px" height="45px"  version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; fill-rule:evenodd; clip-rule:evenodd; cursor:pointer;" viewBox="0 0 5000 3000">
+							 <defs>
+							  <style type="text/css">
+							   <![CDATA[
+							    .fil0 {fill:#00B0DC}
+							   ]]>
+							  </style>
+							 </defs>
+							 <g id="Camada_x0020_1">
+							  <metadata id="CorelCorpID_0Corel-Layer"/>
+							  <path class="fil0" d="M2472 1113c0,1 214,182 247,207l1444 1203c400,374 943,-124 411,-519l-1732 -1442c-431,-376 -468,-215 -963,170 -202,157 -1661,1268 -1713,1470 -80,311 255,522 541,325l430 -347c62,-49 93,-79 157,-126 349,-253 865,-728 1180,-940z"/>
+							 </g>
+							</svg>
 						</div>
+						<div class="valor-conteudo" style="display: none;">
+							<a href="https://www.udemy.com/course/aprenda-javascript-com-facilidade-do-zero/" target="_blank">
+								<img class="img-curso" src="img/js-jq-ajx.jpg">
+								<span>Click aqui e saiba mais...</span>
+							</a>
+                            <p>Neste curso você vai aprender Javascript com facilidade, de forma natural e intuitiva, para seguir carreira no Desenvolvimento Web. Além da base sólida em Javascript, neste curso você aprenderá também JQuery, Ajax e JSON.</p>
+                    	</div>
 					</div>
-					<div class="section-valor">
-						<i class="fas fa-paperclip"></i>
-						<div class="titulo">
-							<h5>Python 3 COMPLETO</h5>
-							<span>Pierian Data Inc. - Udemy - Cursando</span>
+
+					<div class="section-valor formacao-secundaria">
+						<div class="valor-titulo">
+							<i class="fas">
+								<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="paperclip" class="svg svg-inline--fa fa-paperclip fa-w-14" role="img" viewBox="0 0 448 512"><path fill="currentColor" d="M43.246 466.142c-58.43-60.289-57.341-157.511 1.386-217.581L254.392 34c44.316-45.332 116.351-45.336 160.671 0 43.89 44.894 43.943 117.329 0 162.276L232.214 383.128c-29.855 30.537-78.633 30.111-107.982-.998-28.275-29.97-27.368-77.473 1.452-106.953l143.743-146.835c6.182-6.314 16.312-6.422 22.626-.241l22.861 22.379c6.315 6.182 6.422 16.312.241 22.626L171.427 319.927c-4.932 5.045-5.236 13.428-.648 18.292 4.372 4.634 11.245 4.711 15.688.165l182.849-186.851c19.613-20.062 19.613-52.725-.011-72.798-19.189-19.627-49.957-19.637-69.154 0L90.39 293.295c-34.763 35.56-35.299 93.12-1.191 128.313 34.01 35.093 88.985 35.137 123.058.286l172.06-175.999c6.177-6.319 16.307-6.433 22.626-.256l22.877 22.364c6.319 6.177 6.434 16.307.256 22.626l-172.06 175.998c-59.576 60.938-155.943 60.216-214.77-.485z"/></svg>
+							</i>
+							<div class="titulo">
+								<h5>Flexbox - O guia completo</h5>
+								<span>Tárcio Zemel - (Julho de 2019) - Udemy - Concluído</span>
+							</div>
+							<svg class="seta-conteudo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" width="45px" height="45px"  version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; fill-rule:evenodd; clip-rule:evenodd; cursor:pointer;" viewBox="0 0 5000 3000">
+							 <defs>
+							  <style type="text/css">
+							   <![CDATA[
+							    .fil0 {fill:#00B0DC}
+							   ]]>
+							  </style>
+							 </defs>
+							 <g id="Camada_x0020_1">
+							  <metadata id="CorelCorpID_0Corel-Layer"/>
+							  <path class="fil0" d="M2472 1113c0,1 214,182 247,207l1444 1203c400,374 943,-124 411,-519l-1732 -1442c-431,-376 -468,-215 -963,170 -202,157 -1661,1268 -1713,1470 -80,311 255,522 541,325l430 -347c62,-49 93,-79 157,-126 349,-253 865,-728 1180,-940z"/>
+							 </g>
+							</svg>
 						</div>
+						<div class="valor-conteudo" style="display: none;">
+							<a href="https://www.udemy.com/course/flexbox-guia-completo/" target="_blank">
+								<img class="img-curso" src="img/flex-box.jpg">
+								<span>Click aqui e saiba mais...</span>
+							</a>
+                            <p>No curso Flexbox: o guia completo o aluno conhecerá CSS Flexible Box Layout Module, uma das principais tecnologias para o desenvolvimento de layouts modernos e componentes de UI responsivos, tornando-se capacitado a codificar layouts e componentes usando Flexbox e aprimorando suas capacidades no front-end.</p>
+                    	</div>
 					</div>
+
+					<div class="section-valor formacao-secundaria">
+						<div class="valor-titulo">
+							<i class="fas">
+								<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="paperclip" class="svg svg-inline--fa fa-paperclip fa-w-14" role="img" viewBox="0 0 448 512"><path fill="currentColor" d="M43.246 466.142c-58.43-60.289-57.341-157.511 1.386-217.581L254.392 34c44.316-45.332 116.351-45.336 160.671 0 43.89 44.894 43.943 117.329 0 162.276L232.214 383.128c-29.855 30.537-78.633 30.111-107.982-.998-28.275-29.97-27.368-77.473 1.452-106.953l143.743-146.835c6.182-6.314 16.312-6.422 22.626-.241l22.861 22.379c6.315 6.182 6.422 16.312.241 22.626L171.427 319.927c-4.932 5.045-5.236 13.428-.648 18.292 4.372 4.634 11.245 4.711 15.688.165l182.849-186.851c19.613-20.062 19.613-52.725-.011-72.798-19.189-19.627-49.957-19.637-69.154 0L90.39 293.295c-34.763 35.56-35.299 93.12-1.191 128.313 34.01 35.093 88.985 35.137 123.058.286l172.06-175.999c6.177-6.319 16.307-6.433 22.626-.256l22.877 22.364c6.319 6.177 6.434 16.307.256 22.626l-172.06 175.998c-59.576 60.938-155.943 60.216-214.77-.485z"/></svg>
+							</i>
+							<div class="titulo">
+								<h5>CSS Grid: O sistema definitivo de layouts </h5>
+								<span>Tárcio Zemel - (Julho de 2019) - Udemy - Concluído</span>
+							</div>
+							<svg id="as" class="seta-conteudo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" width="45px" height="45px"  version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; fill-rule:evenodd; clip-rule:evenodd; cursor:pointer;" viewBox="0 0 5000 3000">
+							 <defs>
+							  <style type="text/css">
+							   <![CDATA[
+							    .fil0 {fill:#00B0DC}
+							   ]]>
+							  </style>
+							 </defs>
+							 <g id="Camada_x0020_1">
+							  <metadata id="CorelCorpID_0Corel-Layer"/>
+							  <path class="fil0" d="M2472 1113c0,1 214,182 247,207l1444 1203c400,374 943,-124 411,-519l-1732 -1442c-431,-376 -468,-215 -963,170 -202,157 -1661,1268 -1713,1470 -80,311 255,522 541,325l430 -347c62,-49 93,-79 157,-126 349,-253 865,-728 1180,-940z"/>
+							 </g>
+							</svg>
+						</div>
+						<div class="valor-conteudo" style="display: none;">
+							<a href="https://www.udemy.com/course/css-grid-layout/" target="_blank">
+								<img class="img-curso" src="img/css-grid.jpg">
+								<span>Click aqui e saiba mais...</span>
+							</a>
+                            <p>No curso CSS Grid: o sistema de layouts definitivo o aluno conhecerá CSS Grid Layout, a mais nova especificação para a construção de layouts de web sites, tornando-se capacitado a codificar layouts através desta nova tecnologia e aprimorando suas capacidades no front-end.</p>
+                    	</div>
+					</div>
+
+					<div class="section-valor formacao-secundaria">
+						<div class="valor-titulo">
+							<i class="fas">
+								<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="paperclip" class="svg svg-inline--fa fa-paperclip fa-w-14" role="img" viewBox="0 0 448 512"><path fill="currentColor" d="M43.246 466.142c-58.43-60.289-57.341-157.511 1.386-217.581L254.392 34c44.316-45.332 116.351-45.336 160.671 0 43.89 44.894 43.943 117.329 0 162.276L232.214 383.128c-29.855 30.537-78.633 30.111-107.982-.998-28.275-29.97-27.368-77.473 1.452-106.953l143.743-146.835c6.182-6.314 16.312-6.422 22.626-.241l22.861 22.379c6.315 6.182 6.422 16.312.241 22.626L171.427 319.927c-4.932 5.045-5.236 13.428-.648 18.292 4.372 4.634 11.245 4.711 15.688.165l182.849-186.851c19.613-20.062 19.613-52.725-.011-72.798-19.189-19.627-49.957-19.637-69.154 0L90.39 293.295c-34.763 35.56-35.299 93.12-1.191 128.313 34.01 35.093 88.985 35.137 123.058.286l172.06-175.999c6.177-6.319 16.307-6.433 22.626-.256l22.877 22.364c6.319 6.177 6.434 16.307.256 22.626l-172.06 175.998c-59.576 60.938-155.943 60.216-214.77-.485z"/></svg>
+							</i>
+							<div class="titulo">
+								<h5>Curso Completo de Sass/SCSS: Do Iniciante ao Avançado</h5>
+								<span>Tássio Gonçalves - Udemy - (Outubro de 2019) - Concluído</span>
+							</div>
+							<svg id="as" class="seta-conteudo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" width="45px" height="45px"  version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; fill-rule:evenodd; clip-rule:evenodd; cursor:pointer;" viewBox="0 0 5000 3000">
+							 <defs>
+							  <style type="text/css">
+							   <![CDATA[
+							    .fil0 {fill:#00B0DC}
+							   ]]>
+							  </style>
+							 </defs>
+							 <g id="Camada_x0020_1">
+							  <metadata id="CorelCorpID_0Corel-Layer"/>
+							  <path class="fil0" d="M2472 1113c0,1 214,182 247,207l1444 1203c400,374 943,-124 411,-519l-1732 -1442c-431,-376 -468,-215 -963,170 -202,157 -1661,1268 -1713,1470 -80,311 255,522 541,325l430 -347c62,-49 93,-79 157,-126 349,-253 865,-728 1180,-940z"/>
+							 </g>
+							</svg>
+						</div>
+						<div class="valor-conteudo" style="display: none;">
+							<a href="https://www.udemy.com/course/sass-curso-completo/" target="_blank">
+								<img class="img-curso" src="img/sass-css.jpg">
+								<span>Click aqui e saiba mais...</span>
+							</a>
+                            <p>Aprenda:<br>
+                            	Como usar o Sass/SCSS para criar layouts mais flexíveis em menos tempo e gerar código CSS a partir deles. Como usar variáveis para armazenar cores, tamanhos, fontes e muito mais para evitar repetições e tornar seus projetos mais flexíveis e reutilizáveis. Como realizar cálculos dentro do seu código Sass/SCSS para criar layouts responsivos e flexíveis...</p>
+                    	</div>
+					</div>
+
 				</div> <!--  /secundaria  -->
 			</div> <!--  /section-formacao  -->
-		</div> <!--  /formacao  -->
+		</section> <!--  /formacao  -->
 
-		<div id="experiencia" class="caixa">
+		<section id="experiencia" class="caixa">
 
 			<div class="section-titulo">
 				<h3>EXPERIÊNCIA <span>PROFISSIONAL</span></h3>
@@ -341,9 +644,21 @@
 				<div class="section-valor">
 
 					<div class="titulo">
+						<h5>Desenvolvedor Front-end</h5>
+						<span>Agencia N1</span>
+						<h6>2020 - Atualmente</h6>
+					</div>
+
+					<p>Implementação e manutenção de e-commerces legados e IO na plataforma vtex utilizando HTML, CSS, SASS, Javascript, ReactJS, git.</p>
+
+				</div>
+
+				<div class="section-valor">
+
+					<div class="titulo">
 						<h5>Desenhista Projetista</h5>
 						<span>Prosegur Tecnologia</span>
-						<h6>2014 - Atualmente</h6>
+						<h6>2014 - 2020</h6>
 					</div>
 
 					<p>Desenvolvimento de grandes projetos de sistemas de segurança, atuando para empresas como Petrobras, Vale, Honda, entre outras.</p>
@@ -377,9 +692,9 @@
 
 				</div> <!--  /section-valor  -->
 			</div> <!--  /linha  -->
-		</div> <!--  /experiencia  -->
+		</section> <!--  /experiencia  -->
 
-		<div id="contato" class="caixa">
+		<section id="contato" class="caixa">
 
 			<div class="section-titulo">
 				<h3>MEUS <span>CONTATOS</span></h3>
@@ -407,28 +722,36 @@
 				<div class="informacoes">
 
 					<div class="section-info">
-						<i class="fas fa-map-marker-alt"></i>
+						<i class="fas">
+							<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="map-marker-alt" class="svg svg-inline--fa fa-map-marker-alt fa-w-12" role="img" viewBox="0 0 384 512"><path fill="currentColor" d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"/></svg>
+						</i>
 						<div class="info">
 							<h2>ENDEREÇO</h2>
 							<P>Rua araci, São João de Meriti</P>
 						</div>
 					</div>
 					<div class="section-info">
-						<i class="fas fa-phone-alt"></i>
+						<i class="fas">
+							<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="phone-alt" class="svg svg-inline--fa fa-phone-alt fa-w-16" role="img" viewBox="0 0 512 512"><path fill="currentColor" d="M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z"/></svg>
+						</i>
 						<div class="info">
 							<h2>TELEFONE</h2>
-							<P><a href="tel:+55021997184684">+55 021 9 9718 4684</a></P>
+							<P><a href="tel:+55021972677204">+55 021 9 7267 7204</a></P>
 						</div>
 					</div>
 					<div class="section-info">
-						<i class="far fa-envelope-open"></i>
+						<i class="far">
+							<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="far" data-icon="envelope-open" class="svg svg-inline--fa fa-envelope-open fa-w-16" role="img" viewBox="0 0 512 512"><path fill="currentColor" d="M494.586 164.516c-4.697-3.883-111.723-89.95-135.251-108.657C337.231 38.191 299.437 0 256 0c-43.205 0-80.636 37.717-103.335 55.859-24.463 19.45-131.07 105.195-135.15 108.549A48.004 48.004 0 0 0 0 201.485V464c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V201.509a48 48 0 0 0-17.414-36.993zM464 458a6 6 0 0 1-6 6H54a6 6 0 0 1-6-6V204.347c0-1.813.816-3.526 2.226-4.665 15.87-12.814 108.793-87.554 132.364-106.293C200.755 78.88 232.398 48 256 48c23.693 0 55.857 31.369 73.41 45.389 23.573 18.741 116.503 93.493 132.366 106.316a5.99 5.99 0 0 1 2.224 4.663V458zm-31.991-187.704c4.249 5.159 3.465 12.795-1.745 16.981-28.975 23.283-59.274 47.597-70.929 56.863C336.636 362.283 299.205 400 256 400c-43.452 0-81.287-38.237-103.335-55.86-11.279-8.967-41.744-33.413-70.927-56.865-5.21-4.187-5.993-11.822-1.745-16.981l15.258-18.528c4.178-5.073 11.657-5.843 16.779-1.726 28.618 23.001 58.566 47.035 70.56 56.571C200.143 320.631 232.307 352 256 352c23.602 0 55.246-30.88 73.41-45.389 11.994-9.535 41.944-33.57 70.563-56.568 5.122-4.116 12.601-3.346 16.778 1.727l15.258 18.526z"/></svg>
+						</i>
 						<div class="info">
 							<h2>EMAIL</h2>
 							<P><a href="mailto:contato@devjes.com.br">contato@devjes.com.br</a></P>
 						</div>
 					</div>
 					<div class="section-info">
-						<i class="fas fa-globe-americas"></i>
+						<i class="fas">
+							<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="globe-americas" class="svg svg-inline--fa fa-globe-americas fa-w-16" role="img" viewBox="0 0 496 512"><path fill="currentColor" d="M248 8C111.03 8 0 119.03 0 256s111.03 248 248 248 248-111.03 248-248S384.97 8 248 8zm82.29 357.6c-3.9 3.88-7.99 7.95-11.31 11.28-2.99 3-5.1 6.7-6.17 10.71-1.51 5.66-2.73 11.38-4.77 16.87l-17.39 46.85c-13.76 3-28 4.69-42.65 4.69v-27.38c1.69-12.62-7.64-36.26-22.63-51.25-6-6-9.37-14.14-9.37-22.63v-32.01c0-11.64-6.27-22.34-16.46-27.97-14.37-7.95-34.81-19.06-48.81-26.11-11.48-5.78-22.1-13.14-31.65-21.75l-.8-.72a114.792 114.792 0 0 1-18.06-20.74c-9.38-13.77-24.66-36.42-34.59-51.14 20.47-45.5 57.36-82.04 103.2-101.89l24.01 12.01C203.48 89.74 216 82.01 216 70.11v-11.3c7.99-1.29 16.12-2.11 24.39-2.42l28.3 28.3c6.25 6.25 6.25 16.38 0 22.63L264 112l-10.34 10.34c-3.12 3.12-3.12 8.19 0 11.31l4.69 4.69c3.12 3.12 3.12 8.19 0 11.31l-8 8a8.008 8.008 0 0 1-5.66 2.34h-8.99c-2.08 0-4.08.81-5.58 2.27l-9.92 9.65a8.008 8.008 0 0 0-1.58 9.31l15.59 31.19c2.66 5.32-1.21 11.58-7.15 11.58h-5.64c-1.93 0-3.79-.7-5.24-1.96l-9.28-8.06a16.017 16.017 0 0 0-15.55-3.1l-31.17 10.39a11.95 11.95 0 0 0-8.17 11.34c0 4.53 2.56 8.66 6.61 10.69l11.08 5.54c9.41 4.71 19.79 7.16 30.31 7.16s22.59 27.29 32 32h66.75c8.49 0 16.62 3.37 22.63 9.37l13.69 13.69a30.503 30.503 0 0 1 8.93 21.57 46.536 46.536 0 0 1-13.72 32.98zM417 274.25c-5.79-1.45-10.84-5-14.15-9.97l-17.98-26.97a23.97 23.97 0 0 1 0-26.62l19.59-29.38c2.32-3.47 5.5-6.29 9.24-8.15l12.98-6.49C440.2 193.59 448 223.87 448 256c0 8.67-.74 17.16-1.82 25.54L417 274.25z"/></svg>
+						</i>
 						<div class="info">
 							<h2>WEBSITE</h2>
 							<P><a href="https://devjes.com.br">www.devjes.com.br<a></P>
@@ -436,23 +759,14 @@
 					</div>
 				</div> <!--  /informacoes  -->
 			</div><!--  /section-contato  -->
-		</div> <!--  /contato  -->
+		</section> <!--  /contato  -->
+	</main><footer><section id="rodape" class="caixa"><p><a href="https://devjes.com.br">DevJES 2021</a> - Todos os direitos reservados.</p><div class="logo-dev"><a href="https://devjes.com.br"><img src="img/logo.png" class="logo"/></a></div></section></footer>
 
-	</main>
-
-	<footer>
-		<div id="rodape" class="caixa">
-			<p><a href="https://devjes.com.br">DevJES 2019</a> - Todos os direitos reservados.</p>
-			<a href="https://devjes.com.br"><img src="img/logo.png" class="logo"/></a>
-		</div>
-    </footer>
-    
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-	<script src="js/particle/particles.js"></script>
-	<script src="js/particle/app.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+<!-- 	<script src="js/particle/particles.js"></script>
+	<script src="js/particle/app.js"></script> -->
 
 </body>
 </html>

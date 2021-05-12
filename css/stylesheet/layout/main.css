@@ -6,7 +6,18 @@
     justify-content: center;  
 }
 
-
+.menu-rolavel {
+    position: fixed;
+    height: 45px!important;
+    background-color: #333;
+    z-index: 9!important;
+    transition: .5s;
+}
+.menu-inicial {
+    position: initial;
+    height: 60px;
+    background-color: transparent; 
+}
 #sobre {
     flex-wrap: wrap;
 }
@@ -48,29 +59,44 @@
     flex-direction: column;
     background-color: #f8f8f8;
 }
+
 #servicos .section-valor {
-    width: 80%;
+    width: 70%;
     margin-top: 25px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
+
 #servicos .servico {
     width: 360px;
     height: 280px;
     margin: 10px;
     padding: 40px;
+    background-color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    border: thin solid #777;
+    border: thin solid #e0e0e0;
+    transition: 1s;
+    border-radius: 35px;
 }
+
+#servicos .servico:hover {
+    box-shadow: 0px 0px 11px -2px;
+    border: thin solid #f9f9f9;
+    border-radius: 65px;
+}
+
 #servicos .servico i {
     margin-bottom: 15px;
 }
+#servicos .svg-servico {
+    width: 60px;
+}
 #servicos .servico p {
-    text-align: center;
+    text-align: justify;
 }
 #skills {
     flex-direction: column;
@@ -99,19 +125,74 @@
     background-color: #fff;
 }
 #formacao .section-formacao {
+    width: 70%;
     margin: 15px;
     padding: 25px;
     box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.2);
 }
 #formacao .principal {
-    margin: 15px 0;
+    margin: 15px 0 25px 0;
 }
 #formacao .section-valor {
     display: flex;
     align-items: center;
+    flex-direction: column;
+    margin: 10px 0px 10px 0px;
+    padding: 10px;
+    box-shadow: 0px 0px 5px -2px;
+    transition: 1s;
+}
+#formacao .valor-titulo {
+    display: grid;
+    width: 100%;
+    align-items: center;
+}
+#formacao .principal .valor-titulo {
+    grid-template-columns: 10% 90%;
+}
+#formacao .secundaria .valor-titulo {
+    grid-template-columns: 10% 80% 10%;
+}
+.valor-titulo i {
+    justify-self: center;
+}
+.valor-titulo .svg {
+    width:20px; 
+    height:20px;
 }
 #formacao .titulo {
     margin-left: 10px;
+    margin-right: 10px;
+}
+#formacao .seta-conteudo {
+    padding: 10px;
+    transform: rotate(180deg);
+}
+#formacao svg.seta-conteudo-flip {
+    transform: rotate(0deg);
+}
+#formacao .valor-conteudo {
+    align-items: center;
+    width: 90%;
+    margin: 10px 0 10px 0;
+    transition: max-height 0.2s ease-out;
+}
+#formacao .valor-conteudo a {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-decoration: none;
+}
+
+#formacao .valor-conteudo p {
+    margin: 0;
+    min-width: 250px;
+}
+
+.valor-conteudo .img-curso {
+    height: fit-content;
+    border: 5px solid #00B0DC;
+    margin-right: 15px;
 }
 #experiencia {
     flex-direction: column;
@@ -168,4 +249,8 @@
 #contato .section-info i {
     margin-right: 10px;
     margin-bottom: 20px;
+}
+#contato .section-info .svg {
+    width:20px; 
+    height:20px;
 }
